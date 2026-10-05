@@ -51,6 +51,11 @@
     "vladistan",
     "datadict",
     "capsys",
-    "sqlddl"
+    "sqlddl",
+    "Pokémon",
+    "Pokédex",
+    "Korolev",
+    "Pikachu",
+    "Charmander"
   ]
 }

@@ -38,13 +38,21 @@ style: |
     background-color: #1b1f27 !important;
     color: #f2f2f2 !important;
   }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
 ---
 
 <!-- _class: title -->
 
 # LinkML in Ten Minutes
 
-One schema file, every consumer's artifacts
+### by Vlad Korolev
+
+<sub>Boston Python Meetup — October 2026</sub>
 
 <!--
 Title slide. No header bar here; the deck introduces itself first.
@@ -65,9 +73,21 @@ Comic: comic-orientation, caption above.
 
 ---
 
-Every app holds data objects, and every app needs to persist those objects somewhere. A data store needs a model and a schema before it can hold anything.
+### Let's build a Pokémon app
 
-A small app skips the question: build it with a framework like Django, and the framework's own model class is the de facto schema.
+<div class="columns">
+
+<div>
+
+- A `Species` — Pikachu, Charmander, ...
+- A place to persist them
+- A model. A schema.
+
+**Django model = the schema. One owner.**
+
+</div>
+
+<div>
 
 ```python
 class Species(models.Model):
@@ -76,30 +96,74 @@ class Species(models.Model):
     habitat = models.CharField(max_length=100)
 ```
 
-One file, one owner, one source of truth. No one here needs a schema or data-modeling background to follow the rest of this talk.
+</div>
+
+</div>
+
+<sub>Pokémon is a trademark of Nintendo. Used here for illustration only.</sub>
+
+<!--
+Say we're building a Pokémon app. Every Pokémon is a Species — a data
+object the app needs to persist somewhere. A data store needs a model and
+a schema before it can hold anything. A small app skips the question:
+build it with a framework like Django, and the framework's own model
+class is the de facto schema. One file, one owner, one source of truth.
+No schema background needed for the rest of this talk.
+-->
 
 ---
 
 <!-- _class: lead -->
 
-## Complication
+## Growing Pains
 
 *Three teams pull on the same rope, each one certain the rope is theirs.*
 
 <!--
-Complication act target: ~3 minutes.
-Comic: comic-complication, caption above.
+Growing Pains act target: ~3 minutes.
 -->
 
 ---
 
-### The app grows up
+![alt text showing a happy developer cheering with an excited crowd and a big bag of money, width:480px](assets/comics/comic-success.png)
 
-The app splits into a frontend (React) and a backend (FastAPI). More people start working on it. The Django model that used to be the one schema now has two codebases that each need their own idea of the same record.
+### The Pokédex app takes off
 
-Pydantic validates it on the backend. TypeScript types describe it on the frontend. The database table describes it a third way. Who decides which one is right?
+<!--
+Comic: comic-success. The app lands, people love it, money follows.
+-->
 
 ---
+
+![alt text showing a developer burning the midnight oil alone in a big open office, needing more people, width:480px](assets/comics/comic-more-people.png)
+
+### "I need more people to help me."
+
+<!--
+Comic: comic-more-people. Success outgrows one developer. Time to hire
+and split the work.
+-->
+
+---
+
+### The Pokédex grows up
+
+- Frontend — React
+- Backend — FastAPI
+- More people. More code.
+
+**One Species. Whose definition wins?**
+
+<!--
+The Pokémon app splits into a frontend (React) and a backend (FastAPI).
+More people start working on it. The Django model that used to be the
+one schema now has two codebases that each need their own idea of the
+same Species record. Who decides which one is right?
+-->
+
+---
+
+### Three versions, one record
 
 ```python
 # backend: Pydantic
@@ -123,19 +187,35 @@ CREATE TABLE species (
 );
 ```
 
-Three definitions of one record. They drift the moment one of them changes.
+<!--
+Pydantic validates it on the backend, TypeScript types describe it on the
+frontend, the database table describes it a third way. Three definitions
+of one record. They drift the moment one of them changes.
+-->
 
 ---
 
 ### Then it gets worse
 
-A mobile app joins. The API becomes a product other companies integrate against. A data pipeline ships records to a warehouse. A data scientist pulls the same table into a notebook.
+- A mobile Pokédex app
+- The API, as a product for other trainers
+- A data pipeline of catch events
+- A data scientist studying catch rates
 
-Each one wants its own model, in its own language, under its own control. Who owns the record now?
+**Who owns the Species record now?**
+
+<!--
+A mobile Pokédex app joins. The API becomes a product other apps
+integrate against. A data pipeline ships catch events to a warehouse. A
+data scientist pulls the same table into a notebook. Each one wants its
+own model, in its own language, under its own control.
+-->
 
 ---
 
 ![alt text showing several teams each holding up a competing model of the same record and arguing, width:560px](assets/comics/comic-complication-argument.png)
+
+### Everybody's model is the right one
 
 <!--
 Comic: comic-complication-argument, different teams each insisting their
@@ -144,13 +224,15 @@ model is the real one.
 
 ---
 
-The loudest team wins. Everybody else translates, by hand, forever.
+## The loudest team wins.
+
+Everybody else translates, by hand, forever.
 
 ---
 
 <!-- _class: lead -->
 
-## Resolution
+## LinkML
 
 *One schema file sits at the center, lines fanning out to every format it produces.*
 
@@ -163,35 +245,47 @@ Comic: comic-resolution, caption above.
 
 ![alt text showing an impartial referee stepping between the arguing teams, width:560px](assets/comics/comic-resolution-referee.png)
 
-### What if someone impartial could referee this?
+### An impartial referee
 
 <!--
-Comic: comic-resolution-referee, an impartial referee stepping into the
-argument from the previous act.
+What if someone impartial could referee this? Comic: comic-resolution-
+referee, stepping into the argument from the previous act.
 -->
 
 ---
 
 ### LinkML to the rescue
 
-One single source of truth. Generate schema definitions in every language a consumer needs, from the same file, every time.
+- One single source of truth
+- Every language. Same file. Every time.
+
+<!--
+LinkML generates schema definitions in every language a consumer needs,
+from the same file, every time.
+-->
 
 ---
 
 ### One file is the authoritative definition
 
-`schema/sample.yaml` is the one file that says what a record is. Every consumer's artifact — the Pydantic model, the SQL table, the validation rule — is generated from it, not written by hand beside it.
+- `schema/sample.yaml`
+- Pydantic model, SQL table, validation rule — all generated, not hand-written
 
-Change the shape once, in this file, and every generated artifact picks up the change on its next build.
+<!--
+schema/sample.yaml is the one file that says what a record is. Change the
+shape once, in this file, and every generated artifact picks up the
+change on its next build.
+-->
 
 ---
 
 ![alt text showing one schema fanning out to four generated targets, width:560px](assets/diagram-fanout.svg)
 
-Also from the same file: Scala, SHACL, GraphDB, Protocol Buffers.
+- Scala · SHACL · GraphDB · Protocol Buffers
 
 <!--
-Diagram reused from the ISMB 2024 LinkML tutorial.
+Also generated from the same file. Diagram reused from the ISMB 2024
+LinkML tutorial.
 -->
 
 ---
@@ -221,34 +315,43 @@ Walkthrough reused from the ISMB 2024 LinkML tutorial.
 
 ### Who already runs on LinkML
 
-- **MIxS** — minimum information standards for genomic and environmental samples: [github.com/GenomicsStandardsConsortium/mixs](https://github.com/GenomicsStandardsConsortium/mixs) ![width:70px](assets/qr-mixs.svg)
-- **Monarch Initiative** — cross-species disease and phenotype data: [monarchinitiative.org](https://monarchinitiative.org/) ![width:70px](assets/qr-monarch.svg)
-- **BioLink Model** — a shared vocabulary for biomedical knowledge graphs: [github.com/biolink/biolink-model](https://github.com/biolink/biolink-model) ![width:70px](assets/qr-biolink.svg)
+- **MIxS** — genomic & environmental metadata: [github.com/GenomicsStandardsConsortium/mixs](https://github.com/GenomicsStandardsConsortium/mixs) ![width:70px](assets/qr-mixs.svg)
+- **Monarch Initiative** — disease & phenotype data: [monarchinitiative.org](https://monarchinitiative.org/) ![width:70px](assets/qr-monarch.svg)
+- **BioLink Model** — biomedical knowledge graphs: [github.com/biolink/biolink-model](https://github.com/biolink/biolink-model) ![width:70px](assets/qr-biolink.svg)
+
+<!--
+MIxS: minimum information standards for genomic and environmental
+samples. Monarch: cross-species disease and phenotype data. BioLink: a
+shared vocabulary for biomedical knowledge graphs.
+-->
 
 ---
 
 ### Generated documentation, for free
 
-The same `schema/sample.yaml` that generates code also generates a browsable data dictionary. The species entry for this talk's demo schema lives at:
+- Same schema → browsable data dictionary
+- [Species entry for this talk's demo schema →](https://vladistan.github.io/linkml-pokemon/datadict/#species) ![width:70px](assets/qr-datadict.svg)
 
-[vladistan.github.io/linkml-pokemon/datadict/#species](https://vladistan.github.io/linkml-pokemon/datadict/#species) ![width:70px](assets/qr-datadict.svg)
-
-No separate documentation tool, no drift between the docs and the code.
+<!--
+The same schema/sample.yaml that generates code also generates a
+browsable data dictionary. No separate documentation tool, no drift
+between the docs and the code.
+-->
 
 ---
 
 ### Join the community
 
-- Slack and mailing list: [linkml.io/linkml/get-involved](https://linkml.io/linkml/get-involved/index.html)
-- GitHub organization: [github.com/linkml](https://github.com/linkml) ![width:70px](assets/qr-linkml-github.svg)
-- Good first issues: [search the `linkml` org for the label](https://github.com/search?q=org%3Alinkml+label%3A%22good+first+issue%22&type=issues) ![width:70px](assets/qr-good-first-issues.svg)
-
-The presenter has contributed to LinkML's documentation and tooling and is glad to pair with a first-time contributor.
+- Slack & mailing list: [linkml.io/linkml/get-involved](https://linkml.io/linkml/get-involved/index.html)
+- GitHub org: [github.com/linkml](https://github.com/linkml) ![width:70px](assets/qr-linkml-github.svg)
+- Good first issues: [search the label →](https://github.com/search?q=org%3Alinkml+label%3A%22good+first+issue%22&type=issues) ![width:70px](assets/qr-good-first-issues.svg)
 
 ![alt text showing the LinkML tutorial's contributors at ISMB 2024, width:420px](assets/linkml-tutorial-contributors.png)
 
 <!--
-Contributors photo from the ISMB 2024 LinkML tutorial.
+The presenter has contributed to LinkML's documentation and tooling and
+is glad to pair with a first-time contributor. Contributors photo from
+the ISMB 2024 LinkML tutorial.
 -->
 
 ---
