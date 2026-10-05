@@ -50,6 +50,7 @@
     "fanout",
     "vladistan",
     "datadict",
-    "capsys"
+    "capsys",
+    "sqlddl"
   ]
 }

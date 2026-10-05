@@ -27,6 +27,17 @@ style: |
     justify-content: center;
     text-align: center;
   }
+  section:not(.lead):not(.title) {
+    background-color: #f7f5f0 !important;
+    color: #1b1f27 !important;
+  }
+  section:not(.lead):not(.title) table {
+    color: #1b1f27;
+  }
+  section.terminal {
+    background-color: #1b1f27 !important;
+    color: #f2f2f2 !important;
+  }
 ---
 
 <!-- _class: title -->
@@ -43,103 +54,127 @@ Title slide. No header bar here; the deck introduces itself first.
 
 <!-- _class: lead -->
 
-## Act 1: Orientation
+## Orientation
 
 *A team gathers around one data table, each person holding a different definition of it.*
 
 <!--
 Orientation act target: ~2 minutes.
-Comic: comic-orientation, caption above. Art not yet produced; the divider
-carries the caption alone until it is.
+Comic: comic-orientation, caption above.
 -->
 
 ---
 
-You own a data shape that other projects and teams also read and write. No one here needs a schema or data-modeling background to follow this talk.
+Every app holds data objects, and every app needs to persist those objects somewhere. A data store needs a model and a schema before it can hold anything.
 
-LinkML (Linked data Modeling Language) is a vendor-neutral way to describe that shape once, in one YAML file, and generate every format a consumer needs from it.
+A small app skips the question: build it with a framework like Django, and the framework's own model class is the de facto schema.
+
+```python
+class Species(models.Model):
+    name = models.CharField(max_length=200)
+    weight_kg = models.FloatField()
+    habitat = models.CharField(max_length=100)
+```
+
+One file, one owner, one source of truth. No one here needs a schema or data-modeling background to follow the rest of this talk.
 
 ---
 
 <!-- _class: lead -->
 
-## Act 2: Complication
+## Complication
 
 *Three teams pull on the same rope, each one certain the rope is theirs.*
 
 <!--
 Complication act target: ~3 minutes.
-Comic: comic-complication, caption above. Art not yet produced; the divider
-carries the caption alone until it is.
+Comic: comic-complication, caption above.
 -->
 
 ---
 
-### Schema ownership gets contested
+### The app grows up
 
-- As a project grows, more teams read and write the same records, so ownership of "what a record looks like" stops being one person's job.
-- Enforcement stays hard even with a dedicated data modeler on staff, because each consumer still writes its own checks by hand.
-- Add a second organization and both problems compound: now no one owns the schema, and no one can enforce it across a company boundary.
+The app splits into a frontend (React) and a backend (FastAPI). More people start working on it. The Django model that used to be the one schema now has two codebases that each need their own idea of the same record.
 
----
-
-### Team Alpha vs. Team Beta: same entity, two tables
-
-```sql
--- Team Alpha's table
-CREATE TABLE record (
-  record_id   INTEGER PRIMARY KEY,
-  owner_name  TEXT,
-  weight_kg   REAL
-);
-
--- Team Beta's table
-CREATE TABLE record (
-  id          INTEGER PRIMARY KEY,
-  owner       VARCHAR(255),
-  weight      REAL          -- pounds, not kilograms
-);
-```
-
-Same entity, two column sets, two units. Every join between the tables needs a translation layer that nobody owns.
+Pydantic validates it on the backend. TypeScript types describe it on the frontend. The database table describes it a third way. Who decides which one is right?
 
 ---
 
-### Org A vs. Org B: same entity, two `CREATE TABLE` statements
+```python
+# backend: Pydantic
+class Species(BaseModel):
+    name: str
+    weight_kg: float
+```
+
+```typescript
+// frontend: a hand-written type
+interface Species {
+  name: string;
+  weightKg: number;   // kg, unless someone forgot
+}
+```
 
 ```sql
--- Organization A
-CREATE TABLE asset (
-  asset_id    UUID PRIMARY KEY,
-  label       TEXT NOT NULL,
-  status      TEXT CHECK (status IN ('active','retired'))
-);
-
--- Organization B
-CREATE TABLE asset (
-  id          SERIAL PRIMARY KEY,
-  name        TEXT,
-  state       SMALLINT      -- 0 = active, 1 = retired
+-- database: the table that actually exists
+CREATE TABLE species (
+  name TEXT, weight REAL  -- pounds? nobody remembers
 );
 ```
+
+Three definitions of one record. They drift the moment one of them changes.
+
+---
+
+### Then it gets worse
+
+A mobile app joins. The API becomes a product other companies integrate against. A data pipeline ships records to a warehouse. A data scientist pulls the same table into a notebook.
+
+Each one wants its own model, in its own language, under its own control. Who owns the record now?
+
+---
+
+![alt text showing several teams each holding up a competing model of the same record and arguing, width:560px](assets/comics/comic-complication-argument.png)
 
 <!--
-This example is reused from the ISMB 2024 LinkML tutorial.
+Comic: comic-complication-argument, different teams each insisting their
+model is the real one.
 -->
+
+---
+
+The loudest team wins. Everybody else translates, by hand, forever.
 
 ---
 
 <!-- _class: lead -->
 
-## Act 3: Resolution
+## Resolution
 
 *One schema file sits at the center, lines fanning out to every format it produces.*
 
 <!--
 Resolution act target: ~3 minutes.
-Comic: comic-resolution, caption above. Art not yet produced; the divider
-carries the caption alone until it is.
+Comic: comic-resolution, caption above.
 -->
+
+---
+
+![alt text showing an impartial referee stepping between the arguing teams, width:560px](assets/comics/comic-resolution-referee.png)
+
+### What if someone impartial could referee this?
+
+<!--
+Comic: comic-resolution-referee, an impartial referee stepping into the
+argument from the previous act.
+-->
+
+---
+
+### LinkML to the rescue
+
+One single source of truth. Generate schema definitions in every language a consumer needs, from the same file, every time.
 
 ---
 
@@ -220,7 +255,7 @@ Contributors photo from the ISMB 2024 LinkML tutorial.
 
 <!-- _class: lead -->
 
-## Act 4: Demo and Outlinks
+## Demo and Outlinks
 
 <!--
 Demo and Outlinks act target: ~2 minutes. This act compresses first: when the
@@ -262,4 +297,4 @@ Fallback if the terminal or the network drops: `assets/asciinema/linkml-generato
 - LinkML getting-started guide, no install needed: [linkml.io/linkml/intro/tutorial](https://linkml.io/linkml/intro/tutorial.html)
 - This talk's demo schema and data: [github.com/vladistan/linkml-pokemon](https://github.com/vladistan/linkml-pokemon) ![width:70px](assets/qr-pokemon-repo.svg)
 - Full LinkML documentation: [linkml.io/linkml](https://linkml.io/linkml/) ![width:70px](assets/qr-linkml-docs.svg)
-- This deck: [vladistan.github.io/linkml-lightning-talk](https://vladistan.github.io/linkml-lightning-talk/) ![width:70px](assets/qr-deck.svg)
+- This deck: [linkml-lightning-2026.vladistan.com](https://linkml-lightning-2026.vladistan.com/) ![width:70px](assets/qr-deck.svg)
