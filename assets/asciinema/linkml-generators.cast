@@ -1,0 +1,7 @@
+{"version":3,"term":{"cols":80,"rows":24},"timestamp":1791212763,"command":"/tmp/linkml-demo/generators_demo.sh","env":{"SHELL":"/bin/zsh"}}
+[0.007, "o", "\u001b[H\u001b[2J"]
+[0.001, "o", "$ gen-pydantic linkml_pokemon.yaml\r\n"]
+[0.603, "o", "class Species(NamedIndividual):\r\n    \"\"\"\r\n    A species is a category of Pokémon that share common features.\r\n    \"\"\"\r\n    linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'pokemon:Species',\r\n         'from_schema': 'https://pokemonkg.org/ontology'})\r\n\r\n    hasColor: Optional[Color] = Field(default=None, description=\"\"\"A Pokémon has a color\"\"\", json_schema_extra = { \"linkml_meta\": {'domain_of': ['Species'], 'slot_uri': 'pokemon:hasColour'} })\r\n    mayHaveHiddenAbility: Optional[list[Ability]] = Field(default=None, description=\"\"\"A special ability only obtainable through specific encounters or events, not through normal gameplay.\"\"\", json_schema_extra = { \"linkml_meta\": {'domain': 'Species',\r\n"]
+[2.063, "o", "\r\n$ gen-sqlddl linkml_pokemon.yaml\r\n"]
+[0.852, "o", "CREATE TABLE \"Species\" (\r\n\t\"hasGenus\" TEXT,\r\n\t\"hasCatchRate\" INTEGER,\r\n\tid TEXT NOT NULL,\r\n\tname TEXT NOT NULL,\r\n\tdescription TEXT,\r\n\t\"Species_id\" TEXT,\r\n\t\"hasColor_id\" TEXT,\r\n\t\"hasHeight_id\" TEXT,\r\n"]
+[2.108, "x", "0"]

@@ -1,0 +1,44 @@
+[[target]]
+slug = "deck"
+url = "https://vladistan.github.io/linkml-lightning-talk/"
+box_size = 10
+
+[[target]]
+slug = "linkml-docs"
+url = "https://linkml.io/linkml/"
+box_size = 10
+
+[[target]]
+slug = "linkml-github"
+url = "https://github.com/linkml"
+box_size = 10
+
+[[target]]
+slug = "good-first-issues"
+url = "https://github.com/search?q=org%3Alinkml+label%3A%22good+first+issue%22&type=issues"
+box_size = 10
+
+[[target]]
+slug = "mixs"
+url = "https://github.com/GenomicsStandardsConsortium/mixs"
+box_size = 10
+
+[[target]]
+slug = "monarch"
+url = "https://monarchinitiative.org/"
+box_size = 10
+
+[[target]]
+slug = "biolink"
+url = "https://github.com/biolink/biolink-model"
+box_size = 10
+
+[[target]]
+slug = "pokemon-repo"
+url = "https://github.com/vladistan/linkml-pokemon"
+box_size = 10
+
+[[target]]
+slug = "datadict"
+url = "https://vladistan.github.io/linkml-pokemon/datadict/#species"
+box_size = 10
