@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/abe-nb.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print this exact graphic onto the chest of his hoodie as a screen-printed logo, keeping its exact orange color and halftone dots. It must look printed INTO the fabric, not pasted on top: the print warps with the hoodie's folds, its ink breaks up slightly over creases, and the drawstrings lie ON TOP of it. Add nothing else \u2014 no stripes or bands. The figure is small in the middle of a large empty background: keep it exactly that small and in that position. Do not zoom in.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/abe-padded.png",
+  "timestamp": "2026-10-05T21:58:48.486221",
+  "duration_s": 9.88,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-android.png"
+  ],
+  "provider": "openrouter"
+}

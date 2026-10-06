@@ -106,10 +106,6 @@
     <text x="527" y="612" text-anchor="middle" font-size="36" font-weight="bold" fill="#1d4030">schema.yaml</text>
   </g>
 
-  <!-- caption band, matching the generated panels -->
-  <line x1="18" y1="892" x2="1062" y2="892" stroke="#1d4030" stroke-width="9"/>
-  <text x="540" y="1000" text-anchor="middle" font-size="60" font-weight="bold"
-        letter-spacing="2" fill="#1d4030">ONE FILE. EVERY TARGET.</text>
 
   <rect x="9" y="9" width="1062" height="1062" fill="none" stroke="#1d4030" stroke-width="18"/>
   <rect width="1080" height="1080" filter="url(#ps-grain)" opacity="0.6"/>

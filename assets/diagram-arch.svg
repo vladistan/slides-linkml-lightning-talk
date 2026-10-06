@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400">
+  <defs>
+    <marker id="arch-arrow" viewBox="0 0 10 7" refX="10" refY="3.5"
+            markerWidth="9" markerHeight="7" orient="auto-start-reverse">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e8a767"/>
+    </marker>
+  </defs>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#f6ddb9">
+
+    <!-- frontend -->
+    <rect x="20" y="130" width="200" height="140" rx="10"
+          fill="none" stroke="#798959" stroke-width="3"/>
+    <text x="120" y="178" text-anchor="middle" font-size="26" font-weight="bold" fill="#e8a767">React</text>
+    <text x="120" y="212" text-anchor="middle" font-size="16" opacity="0.8">frontend</text>
+    <text x="120" y="240" text-anchor="middle" font-size="14" opacity="0.6">TypeScript types</text>
+
+    <line x1="220" y1="200" x2="300" y2="200" stroke="#e8a767" stroke-width="3" marker-end="url(#arch-arrow)"/>
+    <text x="260" y="186" text-anchor="middle" font-size="13" fill="#e8a767">HTTP</text>
+
+    <!-- middleware -->
+    <rect x="310" y="80" width="370" height="240" rx="10"
+          fill="none" stroke="#798959" stroke-width="3"/>
+    <text x="495" y="120" text-anchor="middle" font-size="26" font-weight="bold" fill="#e8a767">FastAPI</text>
+    <text x="495" y="144" text-anchor="middle" font-size="16" opacity="0.8">middleware</text>
+
+    <rect x="335" y="170" width="150" height="120" rx="8"
+          fill="none" stroke="#f6ddb9" stroke-width="2"/>
+    <text x="410" y="222" text-anchor="middle" font-size="18">Pydantic</text>
+    <text x="410" y="248" text-anchor="middle" font-size="13" opacity="0.6">request models</text>
+
+    <rect x="505" y="170" width="150" height="120" rx="8"
+          fill="none" stroke="#f6ddb9" stroke-width="2"/>
+    <text x="580" y="222" text-anchor="middle" font-size="18">SQLAlchemy</text>
+    <text x="580" y="248" text-anchor="middle" font-size="13" opacity="0.6">ORM classes</text>
+
+    <line x1="680" y1="200" x2="760" y2="200" stroke="#e8a767" stroke-width="3" marker-end="url(#arch-arrow)"/>
+    <text x="720" y="186" text-anchor="middle" font-size="13" fill="#e8a767">SQL</text>
+
+    <!-- database -->
+    <g fill="none" stroke="#798959" stroke-width="3">
+      <ellipse cx="880" cy="140" rx="90" ry="26"/>
+      <path d="M790 140 v120 a90 26 0 0 0 180 0 v-120"/>
+    </g>
+    <text x="880" y="212" text-anchor="middle" font-size="24" font-weight="bold" fill="#e8a767">Postgres</text>
+    <text x="880" y="240" text-anchor="middle" font-size="13" opacity="0.6">tables</text>
+  </g>
+</svg>

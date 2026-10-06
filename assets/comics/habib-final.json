@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/habib-final.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Add this logo onto his polo shirt, once, small and normal size, positioned within one of the cream-colored stripe bands on the chest so it sits aligned with the horizontal stripes, not crossing over orange and cream edges awkwardly. The logo must be recolored to use ONLY two ink colors: terracotta orange and sage green, exactly matching this illustration's palette. Remove all other colors (no dark navy, no bright green wheel). Apply visible halftone grain so it looks screen-printed onto the fabric. Keep the wordmark legible. Do not duplicate the logo anywhere else.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/habib-base.png",
+  "timestamp": "2026-10-05T21:31:01.003901",
+  "duration_s": 11.51,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/openapi-logo-raster.png"
+  ],
+  "provider": "openrouter"
+}

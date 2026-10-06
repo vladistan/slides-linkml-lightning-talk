@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/kevin-nb.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print this exact wordmark onto his t-shirt as a large chest graphic spanning most of the chest width. The wordmark reads 'linkML': lowercase orange 'link' immediately followed by the green 'ML' monogram with its small circular node marks \u2014 both parts must be present and complete, nothing cropped or omitted. Reproduce the exact letterforms and the exact two colors as drawn, with halftone grain, warping with the fabric folds so it looks printed into the shirt. The figure is in the middle of a large empty background: keep it exactly that size and position. Do not zoom in.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/kevin-padded.png",
+  "timestamp": "2026-10-05T21:59:41.615101",
+  "duration_s": 12.31,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-linkml-flat.png"
+  ],
+  "provider": "openrouter"
+}

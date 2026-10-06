@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/zelda-nb.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print this exact graphic onto the chest of her hoodie as a screen-printed logo, keeping its exact orange color and halftone dots. It must look printed INTO the fabric, not pasted on top: the print warps and curves with the hoodie's folds and wrinkles, its ink breaks up slightly over the creases, and the two hanging drawstrings lie ON TOP of the print, crossing over it, with the print continuing behind them. Do not reframe or move the figure; everything else stays identical.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/zelda-padded.png",
+  "timestamp": "2026-10-05T21:58:02.382649",
+  "duration_s": 11.34,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-pyladies.png"
+  ],
+  "provider": "openrouter"
+}

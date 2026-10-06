@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/habib-nb.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print this exact logo artwork onto the left chest of his polo shirt, once, inside a cream stripe band, aligned with the stripes. Reproduce the wordmark exactly as drawn \u2014 it reads 'OPENAPI' above 'INITIATIVE' \u2014 with the gear mark, in the exact two colors shown, with halftone grain. Spell it exactly; do not invent or garble letters. Keep the man centered in the frame exactly where he is, with his whole head visible and clear background above it. Do not move, shift, crop or zoom the figure. Add no rectangles, bars or other shapes anywhere.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/habib-padded.png",
+  "timestamp": "2026-10-05T22:05:22.962398",
+  "duration_s": 11.14,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-openapi-flat.png"
+  ],
+  "provider": "openrouter"
+}

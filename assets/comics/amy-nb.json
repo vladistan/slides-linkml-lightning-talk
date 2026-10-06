@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/amy-nb.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print this exact graphic, with its exact colors and halftone dots, onto the chest of her t-shirt as a small screen-printed logo, centered, following the fabric folds. Do not change its colors. Do not reframe or move the figure; everything else stays identical.",
+  "model": "google/gemini-2.5-flash-image",
+  "preset": null,
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/amy-padded.png",
+  "timestamp": "2026-10-05T21:41:21.048754",
+  "duration_s": 11.26,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-react.png"
+  ],
+  "provider": "openrouter"
+}

@@ -1,0 +1,12 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/kevin-base.png",
+  "prompt": "Flat illustrated character portrait in risograph zine style \u2014 hand-drawn ink illustration, NOT a photograph. Bold linework, flat posterized color fills, visible halftone dot texture, two inks only: terracotta orange and sage green on cream paper. A confident man with short hair, friendly expression, wearing a plain cream t-shirt with no graphic, facing forward, head-to-waist, generous empty space above the head, plain cream background, no props., risograph print style, flat color fills with visible halftone grain, terracotta orange and sage green ink on cream paper, slight color misregistration, screen print texture, vintage zine aesthetic, no text",
+  "model": "gpt-image-2",
+  "preset": "risograph",
+  "platform": "slides",
+  "edit_source": null,
+  "timestamp": "2026-10-05T21:57:49.116015",
+  "duration_s": 16.17,
+  "reference": [],
+  "provider": "openai"
+}

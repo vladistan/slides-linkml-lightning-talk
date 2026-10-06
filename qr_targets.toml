@@ -42,3 +42,8 @@ box_size = 10
 slug = "datadict"
 url = "https://vladistan.github.io/linkml-pokemon/datadict/#species"
 box_size = 10
+
+[[target]]
+slug = "contact"
+url = "https://github.com/vladistan"
+box_size = 10

@@ -1,0 +1,12 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/zelda-base.png",
+  "prompt": "Character reference portrait, head-to-waist shot, zoomed out with very generous empty space above the head, at least one head-height of empty background above the hair. Young woman developer, curly dark hair, round glasses, friendly expression, wearing a plain sage-green hoodie, facing forward, entire torso visible to the waist, plain background, risograph print style, orange and green duotone, halftone grain, risograph print style, flat color fills with visible halftone grain, terracotta orange and sage green ink on cream paper, slight color misregistration, screen print texture, vintage zine aesthetic, no text",
+  "model": "gpt-image-2",
+  "preset": "risograph",
+  "platform": "slides",
+  "edit_source": null,
+  "timestamp": "2026-10-05T21:27:23.195399",
+  "duration_s": 17.61,
+  "reference": [],
+  "provider": "openai"
+}

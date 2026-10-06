@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/kevin-final.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print the attached graphic onto his t-shirt as a large screen-printed chest graphic spanning most of the chest width, following the folds and lighting of the fabric. Keep the graphic's exact two-ink halftone look. Change nothing else: same face, same framing, same background., risograph print style, flat color fills with visible halftone grain, terracotta orange and sage green ink on cream paper, slight color misregistration, screen print texture, vintage zine aesthetic, no text",
+  "model": "gpt-image-2",
+  "preset": "risograph",
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/kevin-padded.png",
+  "timestamp": "2026-10-05T21:39:51.333207",
+  "duration_s": 18.48,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-linkml.png"
+  ],
+  "provider": "openai"
+}

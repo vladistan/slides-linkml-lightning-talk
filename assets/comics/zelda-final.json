@@ -1,0 +1,14 @@
+{
+  "output_path": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/zelda-final.png",
+  "prompt": "Include the object shown in the provided reference image(s) in the scene. Print the attached graphic onto the chest of her hoodie as a screen-printed logo, small normal logo size, centered on the chest, following the folds and lighting of the fabric. Keep the graphic's exact orange halftone look. Change nothing else: same face, same framing, same background., risograph print style, flat color fills with visible halftone grain, terracotta orange and sage green ink on cream paper, slight color misregistration, screen print texture, vintage zine aesthetic, no text",
+  "model": "gpt-image-2",
+  "preset": "risograph",
+  "platform": "slides",
+  "edit_source": "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/zelda-padded.png",
+  "timestamp": "2026-10-05T21:38:51.765248",
+  "duration_s": 14.56,
+  "reference": [
+    "/Users/vlad/Proj/mine/slides/linkml-lightning-talk/assets/comics/_wip/riso-pyladies.png"
+  ],
+  "provider": "openai"
+}
