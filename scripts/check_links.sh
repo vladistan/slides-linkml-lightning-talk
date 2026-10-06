@@ -5,6 +5,7 @@ cd "$(dirname "$0")/.."
 
 urls=$(
   { grep -oE '\(https?://[^) ]+\)' slides.md | tr -d '()'
+    grep -oE '(src|href)="https?://[^"]+"' slides.md | sed -E 's/^(src|href)="(.*)"$/\2/'
     grep -oE '^url = "https?://[^"]+"' qr_targets.toml | sed -E 's/^url = "(.*)"$/\1/'
   } | sort -u
 )

@@ -412,13 +412,7 @@ style: |
 <sub>Boston Python Meetup — October 2026</sub>
 
 <!--
-Title slide.
--->
-
-
-<!--
-Orientation act target: ~2 minutes.
-Comic: comic-orientation, caption above.
+Intro myself say pres about LinkML very quick
 -->
 
 ---
@@ -433,6 +427,7 @@ Comic: comic-orientation, caption above.
 </div>
 </div>
 <!--
+This is Zelda
 -->
 
 ---
@@ -505,7 +500,6 @@ Comic: comic-orientation, caption above.
 -->
 
 <!--
-Reveal 4 of 4. The call to action that opens the build.
 -->
 
 ---
@@ -527,8 +521,6 @@ Reveal 4 of 4. The call to action that opens the build.
 - Let's get started
 
 <!--
-Reveal 1 of 3. Zelda moves to the left; the right half stays empty until
-the data model arrives.
 -->
 
 ---
@@ -553,8 +545,6 @@ the data model arrives.
 - Data model
 
 <!--
-Reveal 2 of 3. First real decision: the data model. A Species, the Moves
-it knows, the Abilities it has.
 -->
 
 ---
@@ -580,7 +570,6 @@ it knows, the Abilities it has.
 - **Keep it simple**
 
 <!--
-Reveal 3 of 3. Three entities, two relationships. Nothing clever.
 -->
 
 ---
@@ -626,12 +615,6 @@ class Species(models.Model):
 </div>
 
 <!--
-The data store needs a model and a schema before it can hold anything. A
-small app skips that question: build it with Django and the framework's
-own model class is the de facto schema. Django turns that one file into
-the SQL tables, the Python objects, and the frontend forms. One owner,
-one source of truth. No schema background needed for the rest of this
-talk.
 -->
 
 ---
@@ -641,8 +624,6 @@ talk.
 ### The Pokédex app takes off
 
 <!--
-Comic: comic-success, 3-panel strip, captions baked into the art. Deploy,
-crowd adopts it, money follows.
 -->
 
 ---
@@ -660,9 +641,6 @@ crowd adopts it, money follows.
 </div>
 
 <!--
-Panel 1 of 3. She's drowning in notifications, bug reports, and feature
-requests, alone. The empty cells hold the other two panels' places, so
-nothing shifts as they appear.
 -->
 
 ---
@@ -680,7 +658,6 @@ nothing shifts as they appear.
 </div>
 
 <!--
-Panel 2 of 3. The idea lands: she can't do this alone anymore.
 -->
 
 ---
@@ -696,8 +673,6 @@ Panel 2 of 3. The idea lands: she can't do this alone anymore.
 </div>
 
 <!--
-Panel 3 of 3. Zelda, Amy, Ned and James, each at their own desk with room
-to work — a small team now builds the Pokédex app together.
 -->
 
 ---
@@ -739,8 +714,6 @@ to work — a small team now builds the Pokédex app together.
 </div>
 
 <!--
-Growing Pains act target: ~3 minutes. The team splits the app: React on
-the front, FastAPI in the middle, Postgres at the back.
 -->
 
 ---
@@ -784,8 +757,6 @@ the front, FastAPI in the middle, Postgres at the back.
 <div class="bottom-caption">New architecture, new challenges.</div>
 
 <!--
-Four places now describe the same Species. Nobody agreed which one is the
-schema.
 -->
 
 ---
@@ -845,10 +816,6 @@ interface Species {
 </div>
 
 <!--
-Frontend (React), backend (FastAPI/Pydantic), and the database each own a
-different version of the same Species record, and each team is certain
-its layer is the one that should define the model. Three definitions of
-one record, drifting the moment any one of them changes.
 -->
 
 ---
@@ -858,8 +825,6 @@ one record, drifting the moment any one of them changes.
 ### Everybody's model is the right one
 
 <!--
-Comic: comic-complication-argument, different teams each insisting their
-model is the real one.
 -->
 
 ---
@@ -871,7 +836,6 @@ model is the real one.
 > Because if it's not normalized in the database, it isn't real.
 
 <!--
-Comic: comic-loudest-wins. Everybody else translates, by hand, forever.
 -->
 
 ---
@@ -883,8 +847,6 @@ Comic: comic-loudest-wins. Everybody else translates, by hand, forever.
 > Or because nothing is valid until Pydantic says so.
 
 <!--
-Same beat, different winner. Which model wins is an accident of who
-argued hardest, not of which one is right.
 -->
 
 ---
@@ -896,8 +858,6 @@ argued hardest, not of which one is right.
 > Or because the UI is what users touch.
 
 <!--
-Third winner, same losers. Rotate the winner and nothing improves — the
-model still lives in one team's head.
 -->
 
 ---
@@ -907,8 +867,6 @@ model still lives in one team's head.
 ## Things grow
 
 <!--
-Short divider. The product, the team and the surfaces all expand from
-here.
 -->
 
 ---
@@ -916,9 +874,6 @@ here.
 <img class="comic-strip" alt="3-panel comic: the app spreads to more users, a new wet-lab wing of bioreactors opens, partners sign on beside an Android control panel" src="assets/comics/comic-growth.png" />
 
 <!--
-More growth. The product spreads, a wet lab opens to actually grow the
-creatures, and outside partners plug in. Each of those is a new surface
-with its own idea of what a Species is.
 -->
 
 ---
@@ -991,11 +946,6 @@ with its own idea of what a Species is.
 
 
 <!--
-Same diagram as before, now buckling. The web app and the Android control
-panels are two separate surfaces, both talking HTTP to the backend. The
-backend talks SQL to Postgres and RPC to the wet lab, where LIMS and the
-sequencer belong to contractors and process control is firmware on the
-bioreactors.
 -->
 
 ---
@@ -1124,11 +1074,6 @@ message Species {
 </div>
 
 <!--
-A mobile Pokédex app joins (Android, Java). The API becomes a product
-other apps integrate against (OpenAPI). Firmware on the actual scanning
-hardware ships its own wire format (Protobuf). Each one wants its own
-model, in its own language, under its own control. Who owns the Species
-record now?
 -->
 
 ---
@@ -1140,10 +1085,6 @@ record now?
 > Height isn't one number anymore. It's a range, and it needs units.
 
 <!--
-Comic: comic-schema-change. A real schema change lands: height becomes a
-min-max range in millimetres, not a bare float. Every one of the six
-independent models — Django, Pydantic, TypeScript, SQL, Java, OpenAPI,
-Protobuf — needs to catch up by hand.
 -->
 
 ---
@@ -1162,8 +1103,6 @@ Protobuf — needs to catch up by hand.
 </div>
 
 <!--
-One change lands. The strip builds up panel by panel as the
-background warms toward anger.
 -->
 
 ---
@@ -1182,7 +1121,6 @@ background warms toward anger.
 </div>
 
 <!--
-Seven codebases, and every one of them has to be edited by hand.
 -->
 
 ---
@@ -1201,8 +1139,6 @@ Seven codebases, and every one of them has to be edited by hand.
 </div>
 
 <!--
-Something still breaks: a 400 Invalid Response, because one of the
-seven definitions didn't get the memo in time.
 -->
 
 ---
@@ -1221,7 +1157,6 @@ seven definitions didn't get the memo in time.
 </div>
 
 <!--
-The argument scrolls off. Nobody owns the model, so nobody can fix it.
 -->
 
 ---
@@ -1240,8 +1175,6 @@ The argument scrolls off. Nobody owns the model, so nobody can fix it.
 </div>
 
 <!--
-Rock bottom. Lowest morale of the talk — hold the beat here before
-the turn.
 -->
 
 ---
@@ -1259,8 +1192,6 @@ the turn.
 </div>
 
 <!--
-Rock bottom scrolls off. The question sits alone in the middle with
-nothing beside it yet.
 -->
 
 ---
@@ -1276,7 +1207,6 @@ nothing beside it yet.
 </div>
 
 <!--
-The background snaps back to paper the moment LinkML walks in.
 -->
 
 ---
@@ -1293,8 +1223,6 @@ The background snaps back to paper the moment LinkML walks in.
 </div>
 
 <!--
-schema/sample.yaml is the one file that says what a record is.
-Every other artifact is generated, not hand-written.
 -->
 
 ---
@@ -1311,8 +1239,6 @@ Every other artifact is generated, not hand-written.
 </div>
 
 <!--
-Every team gets its own generated artifact from the one schema.
-Nobody hand-translates anymore.
 -->
 
 ---
@@ -1322,8 +1248,6 @@ Nobody hand-translates anymore.
 ## Real example
 
 <!--
-Turn from the story to the artefact: a real schema from
-github.com/vladistan/linkml-pokemon.
 -->
 
 ---
@@ -1354,8 +1278,6 @@ classes:
 </div>
 
 <!--
-A schema starts as a list of classes. Nothing else yet — just the
-names of the things the Pokedex knows about.
 -->
 
 ---
@@ -1397,8 +1319,6 @@ slots:
 </div>
 
 <!--
-Slots are declared at the top level, not inside a class. One slot
-definition can be reused by any class that needs it.
 -->
 
 ---
@@ -1446,8 +1366,6 @@ slots:
 </div>
 
 <!--
-A class lists the slots it uses. That indirection is what lets the
-same field mean the same thing everywhere it appears.
 -->
 
 ---
@@ -1506,8 +1424,6 @@ class Species(NamedIndividual):
 </div>
 
 <!--
-Real excerpts from github.com/vladistan/linkml-pokemon, trimmed for the
-slide. Left: the LinkML schema. Right: the generated Python dataclass.
 -->
 
 ---
@@ -1567,10 +1483,6 @@ class Species(NamedIndividual):
 </div>
 
 <!--
-Real excerpt from the Pydantic generator target. Same schema, a
-different Python shape than the dataclass generator: slot_uri aliases
-(hasColour) and looser typing on ranges the generator doesn't model as
-classes.
 -->
 
 ---
@@ -1631,9 +1543,6 @@ CREATE TABLE "Species" (
 </div>
 
 <!--
-Real excerpt from the SQL DDL generator target. hasHeight and hasWeight
-become foreign keys into a Quantity table, because the schema marks them
-inlined ranges, not bare scalars.
 -->
 
 ---
@@ -1689,9 +1598,6 @@ message Species {
 </div>
 
 <!--
-Real excerpt from the Protobuf generator target. Same slots, wire
-format this time — firmware's bytes-on-the-wire model, generated from
-the same file instead of hand-maintained.
 -->
 
 ---
@@ -1749,9 +1655,6 @@ export interface Species
 </div>
 
 <!--
-Real excerpt from the TypeScript generator target. The frontend's
-interface, generated, with the schema's own description text carried
-over as doc comments.
 -->
 
 ---
@@ -1761,9 +1664,6 @@ over as doc comments.
 <iframe class="fullframe" src="https://vladistan.github.io/linkml-pokemon/datadict/#species"></iframe>
 
 <!--
-Live page: the linkml-pokemon generated data dictionary, QuantityValue
-entry. Same NFR-005 exception as the generators-index iframe — needs
-network, blanks in static exports or offline, accepted as a risk.
 -->
 
 ---
@@ -1777,10 +1677,6 @@ network, blanks in static exports or offline, accepted as a risk.
 - ...and a lot more
 
 <!--
-LinkML is bigger than ten minutes. Validators, data loaders, Schema
-Automator (infer a schema from data), Data Harmonizer, and more all
-live in the same ecosystem. This talk stays on schema-to-artifact
-generation; the rest is worth its own talk.
 -->
 
 ---
@@ -1792,9 +1688,6 @@ generation; the rest is worth its own talk.
 - First released in 2021
 
 <!--
-LinkML grew out of a concrete need inside the Monarch Initiative: too
-many ad hoc schemas describing the same biomedical data. BBOP is
-Berkeley Lab's Berkeley Bioinformatics Open-source Projects group.
 -->
 
 ---
@@ -1807,9 +1700,6 @@ Berkeley Lab's Berkeley Bioinformatics Open-source Projects group.
 - Connected to the NIH NCATS Biomedical Data Translator program
 
 <!--
-Monarch itself is a multi-institution collaboration. LinkML inherited
-that institutional backing rather than starting from a single company
-or grant.
 -->
 
 ---
@@ -1824,8 +1714,6 @@ or grant.
 <sub>linkml/linkml, as of October 2026.</sub>
 
 <!--
-Numbers checked live against github.com/linkml/linkml. A GitHub repo's
-counts move daily — state them as a snapshot, not an eternal fact.
 -->
 
 ---
@@ -1845,8 +1733,6 @@ counts move daily — state them as a snapshot, not an eternal fact.
 </div>
 
 <!--
-Schema sizes are deliberately left off until the counts are verified
-against each project's current release.
 -->
 
 ---
@@ -1868,9 +1754,6 @@ against each project's current release.
 </div>
 
 <!--
-The presenter has contributed to LinkML's documentation and tooling and
-is glad to pair with a first-time contributor. Counts from
-github.com/linkml/linkml — a snapshot, not an eternal fact.
 -->
 
 ---
@@ -1892,9 +1775,6 @@ github.com/linkml/linkml — a snapshot, not an eternal fact.
 - Slack & mailing list: [linkml.io/linkml/get-involved](https://linkml.io/linkml/get-involved/index.html)
 
 <!--
-Two groupings: concrete contributions first, then the standing meetings
-and channels. A good-first-issue PR, a new generator, or a bug report
-from real data are all genuinely wanted.
 -->
 
 ---
@@ -1904,9 +1784,6 @@ from real data are all genuinely wanted.
 ## Demo and Outlinks
 
 <!--
-Demo and Outlinks act target: ~2 minutes. This act compresses first: when the
-slot runs short, cut straight to the data-dictionary slide and the outlinks
-slide, dropping both live demos.
 -->
 
 ---
@@ -1916,9 +1793,6 @@ slide, dropping both live demos.
 <iframe class="fullframe" src="https://linkml.neverblink.eu/playground/"></iframe>
 
 <!--
-Live demo: the hosted LinkML playground. Edit the schema on the left,
-watch the generated output change on the right. Needs network — same
-NFR-005 exception as the other embeds.
 -->
 
 ---
@@ -1937,7 +1811,6 @@ NFR-005 exception as the other embeds.
 ## ?????
 
 <!--
-Questions divider.
 -->
 
 ---
@@ -1959,6 +1832,4 @@ Questions divider.
 </div>
 
 <!--
-Closing divider. Four codes: the deck, the demo schema, its generated
-data dictionary, and a way to reach the presenter.
 -->
