@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190">
+  <g stroke="#f6ddb9" fill="none" stroke-width="2">
+
+    <!-- browser chrome -->
+    <rect x="8" y="10" width="304" height="170" rx="6"/>
+    <line x1="8" y1="38" x2="312" y2="38"/>
+    <circle cx="24" cy="24" r="4" fill="#f6ddb9" stroke="none"/>
+    <circle cx="38" cy="24" r="4" fill="#f6ddb9" stroke="none" fill-opacity="0.6"/>
+    <circle cx="52" cy="24" r="4" fill="#f6ddb9" stroke="none" fill-opacity="0.35"/>
+    <rect x="72" y="17" width="224" height="14" rx="7" stroke-opacity="0.45"/>
+
+    <!-- a grid of cards, each with a thumbnail block and two text rules -->
+    <g>
+      <rect x="22" y="52" width="82" height="52" rx="4"/>
+      <rect x="28" y="58" width="30" height="30" rx="3" fill="#f6ddb9" fill-opacity="0.4" stroke="none"/>
+      <line x1="64" y1="64" x2="98" y2="64" stroke-opacity="0.5"/>
+      <line x1="64" y1="74" x2="92" y2="74" stroke-opacity="0.5"/>
+      <line x1="28" y1="96" x2="98" y2="96" stroke="#e8a767" stroke-opacity="0.7"/>
+    </g>
+    <g>
+      <rect x="119" y="52" width="82" height="52" rx="4"/>
+      <rect x="125" y="58" width="30" height="30" rx="3" fill="#f6ddb9" fill-opacity="0.4" stroke="none"/>
+      <line x1="161" y1="64" x2="195" y2="64" stroke-opacity="0.5"/>
+      <line x1="161" y1="74" x2="189" y2="74" stroke-opacity="0.5"/>
+      <line x1="125" y1="96" x2="195" y2="96" stroke="#e8a767" stroke-opacity="0.7"/>
+    </g>
+    <g>
+      <rect x="216" y="52" width="82" height="52" rx="4"/>
+      <rect x="222" y="58" width="30" height="30" rx="3" fill="#f6ddb9" fill-opacity="0.4" stroke="none"/>
+      <line x1="258" y1="64" x2="292" y2="64" stroke-opacity="0.5"/>
+      <line x1="258" y1="74" x2="286" y2="74" stroke-opacity="0.5"/>
+      <line x1="222" y1="96" x2="292" y2="96" stroke="#e8a767" stroke-opacity="0.7"/>
+    </g>
+
+    <!-- detail pane -->
+    <rect x="22" y="118" width="178" height="48" rx="4"/>
+    <line x1="34" y1="132" x2="140" y2="132" stroke-opacity="0.5"/>
+    <line x1="34" y1="144" x2="186" y2="144" stroke-opacity="0.5"/>
+    <line x1="34" y1="156" x2="112" y2="156" stroke-opacity="0.5"/>
+
+    <rect x="216" y="118" width="82" height="48" rx="4" stroke="#e8a767"/>
+    <line x1="232" y1="136" x2="282" y2="136" stroke="#e8a767" stroke-opacity="0.7"/>
+    <line x1="232" y1="150" x2="266" y2="150" stroke="#e8a767" stroke-opacity="0.7"/>
+  </g>
+</svg>
