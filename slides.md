@@ -1438,7 +1438,7 @@ Slide 32
 <!--
 Slide 33
 
-And now we out of
+And now we out of control what do we do?
 -->
 
 ---
@@ -1455,6 +1455,8 @@ And now we out of
 
 <!--
 Slide 34
+
+And that's when the linkml comes in
 -->
 
 ---
@@ -1472,6 +1474,8 @@ Slide 34
 
 <!--
 Slide 35
+
+We can create one schema file and generate code from it for everybody
 -->
 
 ---
@@ -1529,6 +1533,8 @@ classes:
 
 <!--
 Slide 38
+
+Make a model.  Start with classes.  Add slots and assign slots to classes
 -->
 
 ---
@@ -1676,6 +1682,8 @@ class Species(NamedIndividual):
 
 <!--
 Slide 41
+
+And now we can generate code for everybody
 -->
 
 ---
@@ -1921,6 +1929,11 @@ Slide 45
 
 <!--
 Slide 46
+
+Real pokemon species model
+Pokemon schema/ontology practice KG
+Not a toy one, but not a giant
+
 -->
 
 ---
@@ -1982,6 +1995,7 @@ slide carries the headline counts.
 <!--
 Slide 49
 
+
 -->
 
 ---
@@ -2031,6 +2045,10 @@ Slide 50
 
 <!--
 Slide 51
+
+Join us, this is not an overwhelming project.  But you'll learn a lot when try to collaborate
+with 100+ developers.  We are very accepting bunch.  If you are grad student there are some
+interesting research problems that could come up
 -->
 
 ---
