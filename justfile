@@ -4,9 +4,9 @@ marp := "npx --yes @marp-team/marp-cli@4.5.1"
 html:
     {{marp}} slides.md -o slides.html --html --no-stdin
 
-# Build index.html, the file GitHub Pages serves from the main branch root
+# Build index.html, commit it with any new asset, and push to GitHub Pages
 publish:
-    {{marp}} slides.md -o index.html --html --no-stdin
+    bash scripts/publish.sh
 
 # Serve the deck with live reload
 serve:
