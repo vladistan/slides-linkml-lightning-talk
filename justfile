@@ -2,7 +2,11 @@ marp := "npx --yes @marp-team/marp-cli@4.5.1"
 
 # Build the HTML deck
 html:
-    {{marp}} slides.md -o slides.html --html
+    {{marp}} slides.md -o slides.html --html --no-stdin
+
+# Build index.html, the file GitHub Pages serves from the main branch root
+publish:
+    {{marp}} slides.md -o index.html --html --no-stdin
 
 # Serve the deck with live reload
 serve:
@@ -11,7 +15,7 @@ serve:
 # Render one PNG per slide
 pngs:
     mkdir -p slides-png
-    {{marp}} slides.md --html --allow-local-files --images png --image-scale 2 -o slides-png/slides.png
+    {{marp}} slides.md --html --allow-local-files --images png --image-scale 2 --no-stdin -o slides-png/slides.png
 
 # Build and open the deck in the default browser
 preview: html
