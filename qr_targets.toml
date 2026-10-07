@@ -47,3 +47,8 @@ box_size = 10
 slug = "contact"
 url = "https://github.com/vladistan"
 box_size = 10
+
+[[target]]
+slug = "get-involved"
+url = "https://linkml.io/linkml/get-involved/index.html"
+box_size = 10
