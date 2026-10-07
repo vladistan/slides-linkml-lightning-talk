@@ -1,11 +1,12 @@
 # LinkML Lightning Talk
 
 ## Build
-- `just html` builds `slides.html` from `slides.md`.
+- `just html` builds `index.html` from `slides.md`. GitHub Pages serves the same file, so one build output covers local viewing and publication.
 - `just pngs` renders one PNG per slide under `slides-png/`, for the layout read.
-- `just preview N` builds the deck and opens slide `N`.
+- `just preview` builds the deck and opens it in the default browser.
 - `just qr` regenerates the QR SVGs from `qr_targets.toml`.
-- `just links` checks every external URL in `slides.md` and `qr_targets.toml`.
+- `just links` checks every external URL in `slides.md` and `qr_targets.toml`, including `iframe` sources.
+- `just publish` builds `index.html`, commits it with any newly referenced asset, and pushes to GitHub Pages.
 - The marp-cli version is pinned in the `justfile`, so an offline build resolves from the warm npx cache.
 
 ## Asciinema

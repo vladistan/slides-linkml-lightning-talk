@@ -1,8 +1,8 @@
 marp := "npx --yes @marp-team/marp-cli@4.5.1"
 
-# Build the HTML deck
+# Build the HTML deck, the same file GitHub Pages serves
 html:
-    {{marp}} slides.md -o slides.html --html --no-stdin
+    {{marp}} slides.md -o index.html --html --no-stdin
 
 # Build index.html, commit it with any new asset, and push to GitHub Pages
 publish:
@@ -19,7 +19,7 @@ pngs:
 
 # Build and open the deck in the default browser
 preview: html
-    open slides.html
+    open index.html
 
 # Regenerate the QR code SVGs from qr_targets.toml
 qr:
@@ -31,5 +31,4 @@ links:
 
 # Remove build output
 clean:
-    rm -f slides.html
     rm -rf slides-png/
