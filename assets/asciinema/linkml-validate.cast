@@ -1,5 +1,0 @@
-{"version":3,"term":{"cols":80,"rows":24},"timestamp":1791212773,"command":"/tmp/linkml-demo/validate_demo.sh","env":{"SHELL":"/bin/zsh"}}
-[0.006, "o", "\u001b[H\u001b[2J"]
-[0.002, "o", "# Example Species: Pikachu\r\nid: pokemon:pikachu\r\nname: Pikachu\r\ndescription: >-\r\n  Pikachu is an Electric-type Pokémon. It evolves from Pichu when leveled up\r\n  with high friendship and evolves into Raichu when exposed to a Thunder Stone.\r\n  Pikachu is the franchise mascot and Ash Ketchum's partner.\r\nhasColor:\r\n  id: dbpedia:Yellow\r\n  name: Yellow\r\nhasCatchRate: 190\r\nhasType:\r\n  - id: pokemon:Pok%C3%A9Type_Electric\r\n    name: Electric\r\nhasGenus: Mouse Pokémon\r\nfoundIn:\r\n  - id: pokemon:Habitat_Forest\r\n    name: Forest\r\n"]
-[2.679, "o", "No issues found\r\n"]
-[2.095, "x", "0"]

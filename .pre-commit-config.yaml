@@ -1,3 +1,8 @@
+# Generated and externally written files. index.html is marp output built from
+# slides.md, the QR SVGs come from gen_qr.py, and GitHub writes CNAME.
+# Every hook still scans slides.md and qr_targets.toml, their sources.
+exclude: '^(index\.html|CNAME|assets/qr-[^/]+\.svg)$'
+
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
