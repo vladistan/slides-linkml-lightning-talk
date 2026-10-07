@@ -20,62 +20,63 @@ style: |
     height: 8px;
     z-index: 2;
   }
-  section[id="1"]::before { background: linear-gradient(to right, #394d32 0 1.79%, rgba(57, 77, 50, 0.20) 1.79% 100%); }
-  section[id="2"]::before { background: linear-gradient(to right, #394d32 0 3.57%, rgba(57, 77, 50, 0.20) 3.57% 100%); }
-  section[id="3"]::before { background: linear-gradient(to right, #394d32 0 5.36%, rgba(57, 77, 50, 0.20) 5.36% 100%); }
-  section[id="4"]::before { background: linear-gradient(to right, #394d32 0 7.14%, rgba(57, 77, 50, 0.20) 7.14% 100%); }
-  section[id="5"]::before { background: linear-gradient(to right, #394d32 0 8.93%, rgba(57, 77, 50, 0.20) 8.93% 100%); }
-  section[id="6"]::before { background: linear-gradient(to right, #394d32 0 10.71%, rgba(57, 77, 50, 0.20) 10.71% 100%); }
-  section[id="7"]::before { background: linear-gradient(to right, #394d32 0 12.50%, rgba(57, 77, 50, 0.20) 12.50% 100%); }
-  section[id="8"]::before { background: linear-gradient(to right, #394d32 0 14.29%, rgba(57, 77, 50, 0.20) 14.29% 100%); }
-  section[id="9"]::before { background: linear-gradient(to right, #394d32 0 16.07%, rgba(57, 77, 50, 0.20) 16.07% 100%); }
-  section[id="10"]::before { background: linear-gradient(to right, #394d32 0 17.86%, rgba(57, 77, 50, 0.20) 17.86% 100%); }
-  section[id="11"]::before { background: linear-gradient(to right, #394d32 0 19.64%, rgba(57, 77, 50, 0.20) 19.64% 100%); }
-  section[id="12"]::before { background: linear-gradient(to right, #394d32 0 21.43%, rgba(57, 77, 50, 0.20) 21.43% 100%); }
-  section[id="13"]::before { background: linear-gradient(to right, #394d32 0 23.21%, rgba(57, 77, 50, 0.20) 23.21% 100%); }
-  section[id="14"]::before { background: linear-gradient(to right, #394d32 0 25.00%, rgba(57, 77, 50, 0.20) 25.00% 100%); }
-  section[id="15"]::before { background: linear-gradient(to right, #394d32 0 26.79%, rgba(57, 77, 50, 0.20) 26.79% 100%); }
-  section[id="16"]::before { background: linear-gradient(to right, #394d32 0 28.57%, rgba(57, 77, 50, 0.20) 28.57% 100%); }
-  section[id="17"]::before { background: linear-gradient(to right, #394d32 0 30.36%, rgba(57, 77, 50, 0.20) 30.36% 100%); }
-  section[id="18"]::before { background: linear-gradient(to right, #394d32 0 32.14%, rgba(57, 77, 50, 0.20) 32.14% 100%); }
-  section[id="19"]::before { background: linear-gradient(to right, #394d32 0 33.93%, rgba(57, 77, 50, 0.20) 33.93% 100%); }
-  section[id="20"]::before { background: linear-gradient(to right, #394d32 0 35.71%, rgba(57, 77, 50, 0.20) 35.71% 100%); }
-  section[id="21"]::before { background: linear-gradient(to right, #394d32 0 37.50%, rgba(57, 77, 50, 0.20) 37.50% 100%); }
-  section[id="22"]::before { background: linear-gradient(to right, #394d32 0 39.29%, rgba(57, 77, 50, 0.20) 39.29% 100%); }
-  section[id="23"]::before { background: linear-gradient(to right, #394d32 0 41.07%, rgba(57, 77, 50, 0.20) 41.07% 100%); }
-  section[id="24"]::before { background: linear-gradient(to right, #394d32 0 42.86%, rgba(57, 77, 50, 0.20) 42.86% 100%); }
-  section[id="25"]::before { background: linear-gradient(to right, #394d32 0 44.64%, rgba(57, 77, 50, 0.20) 44.64% 100%); }
-  section[id="26"]::before { background: linear-gradient(to right, #394d32 0 46.43%, rgba(57, 77, 50, 0.20) 46.43% 100%); }
-  section[id="27"]::before { background: linear-gradient(to right, #394d32 0 48.21%, rgba(57, 77, 50, 0.20) 48.21% 100%); }
-  section[id="28"]::before { background: linear-gradient(to right, #394d32 0 50.00%, rgba(57, 77, 50, 0.20) 50.00% 100%); }
-  section[id="29"]::before { background: linear-gradient(to right, #394d32 0 51.79%, rgba(57, 77, 50, 0.20) 51.79% 100%); }
-  section[id="30"]::before { background: linear-gradient(to right, #394d32 0 53.57%, rgba(57, 77, 50, 0.20) 53.57% 100%); }
-  section[id="31"]::before { background: linear-gradient(to right, #394d32 0 55.36%, rgba(57, 77, 50, 0.20) 55.36% 100%); }
-  section[id="32"]::before { background: linear-gradient(to right, #394d32 0 57.14%, rgba(57, 77, 50, 0.20) 57.14% 100%); }
-  section[id="33"]::before { background: linear-gradient(to right, #394d32 0 58.93%, rgba(57, 77, 50, 0.20) 58.93% 100%); }
-  section[id="34"]::before { background: linear-gradient(to right, #394d32 0 60.71%, rgba(57, 77, 50, 0.20) 60.71% 100%); }
-  section[id="35"]::before { background: linear-gradient(to right, #394d32 0 62.50%, rgba(57, 77, 50, 0.20) 62.50% 100%); }
-  section[id="36"]::before { background: linear-gradient(to right, #394d32 0 64.29%, rgba(57, 77, 50, 0.20) 64.29% 100%); }
-  section[id="37"]::before { background: linear-gradient(to right, #d39256 0 66.07%, rgba(57, 77, 50, 0.20) 66.07% 100%); }
-  section[id="38"]::before { background: linear-gradient(to right, #d39256 0 67.86%, rgba(57, 77, 50, 0.20) 67.86% 100%); }
-  section[id="39"]::before { background: linear-gradient(to right, #d39256 0 69.64%, rgba(57, 77, 50, 0.20) 69.64% 100%); }
-  section[id="40"]::before { background: linear-gradient(to right, #d39256 0 71.43%, rgba(57, 77, 50, 0.20) 71.43% 100%); }
-  section[id="41"]::before { background: linear-gradient(to right, #d39256 0 73.21%, rgba(57, 77, 50, 0.20) 73.21% 100%); }
-  section[id="42"]::before { background: linear-gradient(to right, #d39256 0 75.00%, rgba(57, 77, 50, 0.20) 75.00% 100%); }
-  section[id="43"]::before { background: linear-gradient(to right, #d39256 0 76.79%, rgba(57, 77, 50, 0.20) 76.79% 100%); }
-  section[id="44"]::before { background: linear-gradient(to right, #d39256 0 78.57%, rgba(57, 77, 50, 0.20) 78.57% 100%); }
-  section[id="45"]::before { background: linear-gradient(to right, #d39256 0 80.36%, rgba(57, 77, 50, 0.20) 80.36% 100%); }
-  section[id="46"]::before { background: linear-gradient(to right, #d39256 0 82.14%, rgba(57, 77, 50, 0.20) 82.14% 100%); }
-  section[id="47"]::before { background: linear-gradient(to right, #c59965 0 83.93%, rgba(57, 77, 50, 0.20) 83.93% 100%); }
-  section[id="48"]::before { background: linear-gradient(to right, #c59965 0 85.71%, rgba(57, 77, 50, 0.20) 85.71% 100%); }
-  section[id="49"]::before { background: linear-gradient(to right, #c59965 0 87.50%, rgba(57, 77, 50, 0.20) 87.50% 100%); }
-  section[id="50"]::before { background: linear-gradient(to right, #c59965 0 89.29%, rgba(57, 77, 50, 0.20) 89.29% 100%); }
-  section[id="51"]::before { background: linear-gradient(to right, #c59965 0 91.07%, rgba(57, 77, 50, 0.20) 91.07% 100%); }
-  section[id="52"]::before { background: linear-gradient(to right, #c59965 0 92.86%, rgba(57, 77, 50, 0.20) 92.86% 100%); }
-  section[id="53"]::before { background: linear-gradient(to right, #c59965 0 94.64%, rgba(57, 77, 50, 0.20) 94.64% 100%); }
-  section[id="54"]::before { background: linear-gradient(to right, #c59965 0 96.43%, rgba(57, 77, 50, 0.20) 96.43% 100%); }
-  section[id="55"]::before { background: linear-gradient(to right, #c59965 0 98.21%, rgba(57, 77, 50, 0.20) 98.21% 100%); }
-  section[id="56"]::before { background: linear-gradient(to right, #c59965 0 100.00%, rgba(57, 77, 50, 0.20) 100.00% 100%); }
+  section[id="1"]::before { background: linear-gradient(to right, #394d32 0 1.75%, rgba(57, 77, 50, 0.20) 1.75% 100%); }
+  section[id="2"]::before { background: linear-gradient(to right, #394d32 0 3.51%, rgba(57, 77, 50, 0.20) 3.51% 100%); }
+  section[id="3"]::before { background: linear-gradient(to right, #394d32 0 5.26%, rgba(57, 77, 50, 0.20) 5.26% 100%); }
+  section[id="4"]::before { background: linear-gradient(to right, #394d32 0 7.02%, rgba(57, 77, 50, 0.20) 7.02% 100%); }
+  section[id="5"]::before { background: linear-gradient(to right, #394d32 0 8.77%, rgba(57, 77, 50, 0.20) 8.77% 100%); }
+  section[id="6"]::before { background: linear-gradient(to right, #394d32 0 10.53%, rgba(57, 77, 50, 0.20) 10.53% 100%); }
+  section[id="7"]::before { background: linear-gradient(to right, #394d32 0 12.28%, rgba(57, 77, 50, 0.20) 12.28% 100%); }
+  section[id="8"]::before { background: linear-gradient(to right, #394d32 0 14.04%, rgba(57, 77, 50, 0.20) 14.04% 100%); }
+  section[id="9"]::before { background: linear-gradient(to right, #394d32 0 15.79%, rgba(57, 77, 50, 0.20) 15.79% 100%); }
+  section[id="10"]::before { background: linear-gradient(to right, #394d32 0 17.54%, rgba(57, 77, 50, 0.20) 17.54% 100%); }
+  section[id="11"]::before { background: linear-gradient(to right, #394d32 0 19.30%, rgba(57, 77, 50, 0.20) 19.30% 100%); }
+  section[id="12"]::before { background: linear-gradient(to right, #394d32 0 21.05%, rgba(57, 77, 50, 0.20) 21.05% 100%); }
+  section[id="13"]::before { background: linear-gradient(to right, #394d32 0 22.81%, rgba(57, 77, 50, 0.20) 22.81% 100%); }
+  section[id="14"]::before { background: linear-gradient(to right, #394d32 0 24.56%, rgba(57, 77, 50, 0.20) 24.56% 100%); }
+  section[id="15"]::before { background: linear-gradient(to right, #394d32 0 26.32%, rgba(57, 77, 50, 0.20) 26.32% 100%); }
+  section[id="16"]::before { background: linear-gradient(to right, #394d32 0 28.07%, rgba(57, 77, 50, 0.20) 28.07% 100%); }
+  section[id="17"]::before { background: linear-gradient(to right, #394d32 0 29.82%, rgba(57, 77, 50, 0.20) 29.82% 100%); }
+  section[id="18"]::before { background: linear-gradient(to right, #394d32 0 31.58%, rgba(57, 77, 50, 0.20) 31.58% 100%); }
+  section[id="19"]::before { background: linear-gradient(to right, #394d32 0 33.33%, rgba(57, 77, 50, 0.20) 33.33% 100%); }
+  section[id="20"]::before { background: linear-gradient(to right, #394d32 0 35.09%, rgba(57, 77, 50, 0.20) 35.09% 100%); }
+  section[id="21"]::before { background: linear-gradient(to right, #394d32 0 36.84%, rgba(57, 77, 50, 0.20) 36.84% 100%); }
+  section[id="22"]::before { background: linear-gradient(to right, #394d32 0 38.60%, rgba(57, 77, 50, 0.20) 38.60% 100%); }
+  section[id="23"]::before { background: linear-gradient(to right, #394d32 0 40.35%, rgba(57, 77, 50, 0.20) 40.35% 100%); }
+  section[id="24"]::before { background: linear-gradient(to right, #394d32 0 42.11%, rgba(57, 77, 50, 0.20) 42.11% 100%); }
+  section[id="25"]::before { background: linear-gradient(to right, #394d32 0 43.86%, rgba(57, 77, 50, 0.20) 43.86% 100%); }
+  section[id="26"]::before { background: linear-gradient(to right, #394d32 0 45.61%, rgba(57, 77, 50, 0.20) 45.61% 100%); }
+  section[id="27"]::before { background: linear-gradient(to right, #394d32 0 47.37%, rgba(57, 77, 50, 0.20) 47.37% 100%); }
+  section[id="28"]::before { background: linear-gradient(to right, #394d32 0 49.12%, rgba(57, 77, 50, 0.20) 49.12% 100%); }
+  section[id="29"]::before { background: linear-gradient(to right, #394d32 0 50.88%, rgba(57, 77, 50, 0.20) 50.88% 100%); }
+  section[id="30"]::before { background: linear-gradient(to right, #394d32 0 52.63%, rgba(57, 77, 50, 0.20) 52.63% 100%); }
+  section[id="31"]::before { background: linear-gradient(to right, #394d32 0 54.39%, rgba(57, 77, 50, 0.20) 54.39% 100%); }
+  section[id="32"]::before { background: linear-gradient(to right, #394d32 0 56.14%, rgba(57, 77, 50, 0.20) 56.14% 100%); }
+  section[id="33"]::before { background: linear-gradient(to right, #394d32 0 57.89%, rgba(57, 77, 50, 0.20) 57.89% 100%); }
+  section[id="34"]::before { background: linear-gradient(to right, #394d32 0 59.65%, rgba(57, 77, 50, 0.20) 59.65% 100%); }
+  section[id="35"]::before { background: linear-gradient(to right, #394d32 0 61.40%, rgba(57, 77, 50, 0.20) 61.40% 100%); }
+  section[id="36"]::before { background: linear-gradient(to right, #394d32 0 63.16%, rgba(57, 77, 50, 0.20) 63.16% 100%); }
+  section[id="37"]::before { background: linear-gradient(to right, #d39256 0 64.91%, rgba(57, 77, 50, 0.20) 64.91% 100%); }
+  section[id="38"]::before { background: linear-gradient(to right, #d39256 0 66.67%, rgba(57, 77, 50, 0.20) 66.67% 100%); }
+  section[id="39"]::before { background: linear-gradient(to right, #d39256 0 68.42%, rgba(57, 77, 50, 0.20) 68.42% 100%); }
+  section[id="40"]::before { background: linear-gradient(to right, #d39256 0 70.18%, rgba(57, 77, 50, 0.20) 70.18% 100%); }
+  section[id="41"]::before { background: linear-gradient(to right, #d39256 0 71.93%, rgba(57, 77, 50, 0.20) 71.93% 100%); }
+  section[id="42"]::before { background: linear-gradient(to right, #d39256 0 73.68%, rgba(57, 77, 50, 0.20) 73.68% 100%); }
+  section[id="43"]::before { background: linear-gradient(to right, #d39256 0 75.44%, rgba(57, 77, 50, 0.20) 75.44% 100%); }
+  section[id="44"]::before { background: linear-gradient(to right, #d39256 0 77.19%, rgba(57, 77, 50, 0.20) 77.19% 100%); }
+  section[id="45"]::before { background: linear-gradient(to right, #d39256 0 78.95%, rgba(57, 77, 50, 0.20) 78.95% 100%); }
+  section[id="46"]::before { background: linear-gradient(to right, #d39256 0 80.70%, rgba(57, 77, 50, 0.20) 80.70% 100%); }
+  section[id="47"]::before { background: linear-gradient(to right, #d39256 0 82.46%, rgba(57, 77, 50, 0.20) 82.46% 100%); }
+  section[id="48"]::before { background: linear-gradient(to right, #c59965 0 84.21%, rgba(57, 77, 50, 0.20) 84.21% 100%); }
+  section[id="49"]::before { background: linear-gradient(to right, #c59965 0 85.96%, rgba(57, 77, 50, 0.20) 85.96% 100%); }
+  section[id="50"]::before { background: linear-gradient(to right, #c59965 0 87.72%, rgba(57, 77, 50, 0.20) 87.72% 100%); }
+  section[id="51"]::before { background: linear-gradient(to right, #c59965 0 89.47%, rgba(57, 77, 50, 0.20) 89.47% 100%); }
+  section[id="52"]::before { background: linear-gradient(to right, #c59965 0 91.23%, rgba(57, 77, 50, 0.20) 91.23% 100%); }
+  section[id="53"]::before { background: linear-gradient(to right, #c59965 0 92.98%, rgba(57, 77, 50, 0.20) 92.98% 100%); }
+  section[id="54"]::before { background: linear-gradient(to right, #c59965 0 94.74%, rgba(57, 77, 50, 0.20) 94.74% 100%); }
+  section[id="55"]::before { background: linear-gradient(to right, #c59965 0 96.49%, rgba(57, 77, 50, 0.20) 96.49% 100%); }
+  section[id="56"]::before { background: linear-gradient(to right, #c59965 0 98.25%, rgba(57, 77, 50, 0.20) 98.25% 100%); }
+  section[id="57"]::before { background: linear-gradient(to right, #c59965 0 100.00%, rgba(57, 77, 50, 0.20) 100.00% 100%); }
   section:not(.title) {
     position: relative;
     padding-top: 48px;
@@ -816,7 +817,7 @@ Django app, one model file, takes care of db backend and frontend
 
 <img class="comic-strip" src="assets/comics/comic-success.png" />
 
-### The Pokédex app takes off
+### The app takes off
 
 <!--
 Slide 11
@@ -1938,6 +1939,16 @@ Not a toy one, but not a giant
 
 ---
 
+<!-- _class: framed -->
+
+<iframe class="fullframe" src="https://linkml.io/linkml/generators/json-schema.html"></iframe>
+
+<!--
+Slide 47
+-->
+
+---
+
 <!-- _class: top -->
 
 ### Not covered today
@@ -1949,7 +1960,7 @@ Not a toy one, but not a giant
 - ...and a lot more
 
 <!--
-Slide 47
+Slide 48
 -->
 
 ---
@@ -1959,13 +1970,13 @@ Slide 47
 ### Origin
 
 - Started by Harold Solbrig, Johns Hopkins University
-- Lead maintainer: Sierra Moxon, Lawrence Berkeley National Laboratory (BBOP)
 - First released in 2021
-- Community-driven, Apache-2.0 licensed
-- Backed by Berkeley Lab's BBOP group and the Monarch Initiative collaboration — Jackson Laboratory, EMBL-EBI, and others
+- Apache-2.0 licensed
+- Lead maintainer: Sierra Moxon, Lawrence Berkeley National Laboratory (BBOP)
+- Backed by Berkeley Lab's BBOP group — Jackson Laboratory, EMBL-EBI, and others
 
 <!--
-Slide 48
+Slide 49
 
 Where it came from and who keeps it running, in one beat. The community
 slide carries the headline counts.
@@ -1993,7 +2004,7 @@ slide carries the headline counts.
 
 
 <!--
-Slide 49
+Slide 50
 
 
 -->
@@ -2019,7 +2030,7 @@ Slide 49
 
 
 <!--
-Slide 50
+Slide 51
 -->
 
 
@@ -2044,7 +2055,7 @@ Slide 50
 - [Slack and mailing list](https://linkml.io/linkml/get-involved/index.html)
 
 <!--
-Slide 51
+Slide 52
 
 Join us, this is not an overwhelming project.  But you'll learn a lot when try to collaborate
 with 100+ developers.  We are very accepting bunch.  If you are grad student there are some
@@ -2058,7 +2069,7 @@ interesting research problems that could come up
 ## Demo
 
 <!--
-Slide 52
+Slide 53
 -->
 
 ---
@@ -2068,7 +2079,7 @@ Slide 52
 <iframe class="fullframe" src="https://linkml.neverblink.eu/playground/"></iframe>
 
 <!--
-Slide 53
+Slide 54
 -->
 
 ---
@@ -2082,7 +2093,7 @@ Slide 53
 - [Pokemon KG](https://github.com/vladistan/linkml-pokemon)
 
 <!--
-Slide 54
+Slide 55
 -->
 
 ---
@@ -2102,7 +2113,7 @@ Slide 54
 </div>
 
 <!--
-Slide 55
+Slide 56
 -->
 
 ---
@@ -2122,5 +2133,5 @@ Slide 55
 </div>
 
 <!--
-Slide 56
+Slide 57
 -->
