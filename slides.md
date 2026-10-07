@@ -582,7 +582,7 @@ style: |
 
 <!-- _class: title -->
 
-<div class="repo-link"><img class="gh" alt="" src="assets/icon-github-light.svg" /><a href="https://github.com/vladistan/slides-linkml-lightning-talk">vladistan/slides-linkml-lightning-talk</a></div>
+<div class="repo-link"><img class="gh" src="assets/icon-github-light.svg" /><a href="https://github.com/vladistan/slides-linkml-lightning-talk">vladistan/slides-linkml-lightning-talk</a></div>
 
 # LinkML in Ten Minutes
 
@@ -604,12 +604,15 @@ Intro myself say pres about LinkML very quick
 <div>
 </div>
 <div>
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 </div>
 </div>
+
 <!--
 Slide 2
-This is Zelda
+
+This is Zelda. She is a developer. She lives in Boston.  And she likes Pokemons
+She needs to make an app to track Species Moves and Abilities
 -->
 
 ---
@@ -621,7 +624,7 @@ This is Zelda
 - My name is Zelda
 </div>
 <div>
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 </div>
 </div>
 <!--
@@ -638,7 +641,7 @@ Slide 3
 - I am a developer
 </div>
 <div>
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 </div>
 </div>
 
@@ -657,7 +660,7 @@ Slide 4
 - I like Pokémon
 </div>
 <div>
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 </div>
 </div>
 <div class="footnote">Pokémon is a trademark of Nintendo. Used here for illustration only.</div>
@@ -677,7 +680,7 @@ Slide 5
 - I need an app to keep track of Species, Moves and Abilities
 </div>
 <div>
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 </div>
 </div>
 <div class="footnote">Pokémon is a trademark of Nintendo. Used here for illustration only.</div>
@@ -694,7 +697,7 @@ Slide 6
 
 <div>
 
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 
 </div>
 
@@ -708,6 +711,8 @@ Slide 6
 
 <!--
 Slide 7
+
+To get started we need a data model and we should keep things very simple.
 -->
 
 ---
@@ -716,13 +721,13 @@ Slide 7
 
 <div>
 
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 
 </div>
 
 <div>
 
-<img alt="ER diagram: Species has many Moves and many Abilities" src="assets/diagram-er.svg" />
+<img src="assets/diagram-er.svg" />
 
 </div>
 
@@ -741,13 +746,13 @@ Slide 8
 
 <div>
 
-<img class="portrait" alt="Zelda, a developer in a hoodie, risograph comic panel" src="assets/comics/zelda-clean.png" />
+<img class="portrait" src="assets/comics/zelda-clean.png" />
 
 </div>
 
 <div>
 
-<img alt="ER diagram: Species has many Moves and many Abilities" src="assets/diagram-er.svg" />
+<img src="assets/diagram-er.svg" />
 
 </div>
 
@@ -765,7 +770,7 @@ Slide 9
 
 ### Django model = the schema. One owner.
 
-<img class="er-top" alt="ER diagram: Species has many Moves and many Abilities" src="assets/diagram-er.svg" />
+<img class="er-top" src="assets/diagram-er.svg" />
 
 <div class="columns">
 
@@ -803,16 +808,20 @@ class Species(models.Model):
 
 <!--
 Slide 10
+
+Django app, one model file, takes care of db backend and frontend
 -->
 
 ---
 
-<img class="comic-strip" alt="3-panel comic: Zelda ships the app under PyLadies and Boston Python posters, a crowd cheers using it, a bag of money arrives" src="assets/comics/comic-success.png" />
+<img class="comic-strip" src="assets/comics/comic-success.png" />
 
 ### The Pokédex app takes off
 
 <!--
 Slide 11
+
+Things take off. Lots of fans, recognition and a bag of money
 -->
 
 ---
@@ -821,7 +830,7 @@ Slide 11
 
 <div class="panels">
 
-<div><img alt="Zelda swamped and exhausted, alone at her laptop: &quot;Success outgrows one developer&quot;" src="assets/comics/panel-tired.png" /></div>
+<div><img src="assets/comics/panel-tired.png" /></div>
 
 <div></div>
 
@@ -831,6 +840,10 @@ Slide 11
 
 <!--
 Slide 12
+
+But now cost of fame.  Bugs, Features, Infrastructure
+She needs more people
+And she gets a team
 -->
 
 ---
@@ -839,9 +852,9 @@ Slide 12
 
 <div class="panels">
 
-<div><img alt="Zelda swamped and exhausted, alone at her laptop: &quot;Success outgrows one developer&quot;" src="assets/comics/panel-tired.png" /></div>
+<div><img src="assets/comics/panel-tired.png" /></div>
 
-<div><img alt="a lightbulb moment hits Zelda: &quot;I need more people to help me&quot;" src="assets/comics/panel-idea.png" /></div>
+<div><img src="assets/comics/panel-idea.png" /></div>
 
 <div></div>
 
@@ -855,11 +868,11 @@ Slide 13
 
 <div class="panels">
 
-<div><img alt="Zelda swamped and exhausted, alone at her laptop: &quot;Success outgrows one developer&quot;" src="assets/comics/panel-tired.png" /></div>
+<div><img src="assets/comics/panel-tired.png" /></div>
 
-<div><img alt="a lightbulb moment hits Zelda: &quot;I need more people to help me&quot;" src="assets/comics/panel-idea.png" /></div>
+<div><img src="assets/comics/panel-idea.png" /></div>
 
-<div><img alt="Zelda, Amy, Ned and James at their own desks in a roomy office: &quot;A small team, building together&quot;" src="assets/comics/panel-team.png" /></div>
+<div><img src="assets/comics/panel-team.png" /></div>
 
 </div>
 
@@ -877,8 +890,8 @@ Slide 14
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="React" src="assets/logos/react.png" /><span>React</span></div>
-<div class="tbody"><img alt="a card grid user interface" src="assets/diagram-ui.svg" /></div>
+<div class="thead"><img src="assets/logos/react.png" /><span>React</span></div>
+<div class="tbody"><img src="assets/diagram-ui.svg" /></div>
 </div>
 <div class="tlabel">Frontend</div>
 </div>
@@ -887,8 +900,8 @@ Slide 14
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="FastAPI" src="assets/logos/fastapi.png" /></div>
-<div class="tbody"><div class="chips"><span><img alt="Pydantic" src="assets/logos/pydantic.png" />Pydantic</span><span><img alt="SQLAlchemy" src="assets/logos/sqlalchemy.png" /></span></div></div>
+<div class="thead"><img src="assets/logos/fastapi.png" /></div>
+<div class="tbody"><div class="chips"><span><img src="assets/logos/pydantic.png" />Pydantic</span><span><img src="assets/logos/sqlalchemy.png" /></span></div></div>
 </div>
 <div class="tlabel">Backend</div>
 </div>
@@ -897,8 +910,8 @@ Slide 14
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="PostgreSQL" src="assets/logos/postgres.png" /><span>Postgres</span></div>
-<div class="tbody"><img alt="three related tables" src="assets/diagram-tables.svg" /></div>
+<div class="thead"><img src="assets/logos/postgres.png" /><span>Postgres</span></div>
+<div class="tbody"><img src="assets/diagram-tables.svg" /></div>
 </div>
 <div class="tlabel">Database</div>
 </div>
@@ -907,6 +920,9 @@ Slide 14
 
 <!--
 Slide 15
+
+The team comes with new architecture
+New arch new challenges
 -->
 
 ---
@@ -919,8 +935,8 @@ Slide 15
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="React" src="assets/logos/react.png" /><span>React</span></div>
-<div class="tbody"><img alt="a card grid user interface" src="assets/diagram-ui.svg" /></div>
+<div class="thead"><img src="assets/logos/react.png" /><span>React</span></div>
+<div class="tbody"><img src="assets/diagram-ui.svg" /></div>
 </div>
 <div class="tlabel">Frontend</div>
 </div>
@@ -929,8 +945,8 @@ Slide 15
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="FastAPI" src="assets/logos/fastapi.png" /></div>
-<div class="tbody"><div class="chips"><span><img alt="Pydantic" src="assets/logos/pydantic.png" />Pydantic</span><span><img alt="SQLAlchemy" src="assets/logos/sqlalchemy.png" /></span></div></div>
+<div class="thead"><img src="assets/logos/fastapi.png" /></div>
+<div class="tbody"><div class="chips"><span><img src="assets/logos/pydantic.png" />Pydantic</span><span><img src="assets/logos/sqlalchemy.png" /></span></div></div>
 </div>
 <div class="tlabel">Backend</div>
 </div>
@@ -939,8 +955,8 @@ Slide 15
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="PostgreSQL" src="assets/logos/postgres.png" /><span>Postgres</span></div>
-<div class="tbody"><img alt="three related tables" src="assets/diagram-tables.svg" /></div>
+<div class="thead"><img src="assets/logos/postgres.png" /><span>Postgres</span></div>
+<div class="tbody"><img src="assets/diagram-tables.svg" /></div>
 </div>
 <div class="tlabel">Database</div>
 </div>
@@ -951,6 +967,8 @@ Slide 15
 
 <!--
 Slide 16
+
+
 -->
 
 ---
@@ -1011,21 +1029,25 @@ interface Species {
 
 <!--
 Slide 17
+
+Many devs. Many opinions
 -->
 
 ---
 
-![alt text showing several teams each holding up a competing model of the same record and arguing, width:720px](assets/comics/comic-complication-argument.png)
+![width:720px](assets/comics/comic-complication-argument.png)
 
 ### Everybody's model is the right one
 
 <!--
 Slide 18
+
+And of course my model is the right one
 -->
 
 ---
 
-![alt text showing the DBA standing triumphant while the frontend and backend developers look defeated, width:720px](assets/comics/comic-loudest-wins.png)
+![width:720px](assets/comics/comic-loudest-wins.png)
 
 ## The loudest team wins.
 
@@ -1033,11 +1055,13 @@ Slide 18
 
 <!--
 Slide 19
+
+Loudest team usually wins.  Everybody has to deal with it.  For small teams usually works.
 -->
 
 ---
 
-![alt text showing the Python developer standing triumphant while the frontend developer and the DBA look defeated, width:720px](assets/comics/comic-loudest-pydantic.png)
+![width:720px](assets/comics/comic-loudest-pydantic.png)
 
 ## The loudest team wins.
 
@@ -1049,7 +1073,7 @@ Slide 20
 
 ---
 
-![alt text showing the frontend developer standing triumphant while the Python developer and the DBA look defeated, width:720px](assets/comics/comic-loudest-frontend.png)
+![width:720px](assets/comics/comic-loudest-frontend.png)
 
 ## The loudest team wins.
 
@@ -1067,14 +1091,21 @@ Slide 21
 
 <!--
 Slide 22
+
+Things grow.  More users. More resources.
+Pivot to Biotech. Synthetic biology team
+We can now grow real pokemons
+But we need more people
+
 -->
 
 ---
 
-<img class="comic-strip" alt="3-panel comic: the app spreads to more users, a new wet-lab wing of bioreactors opens, partners sign on beside an Android control panel" src="assets/comics/comic-growth.png" />
+<img class="comic-strip" src="assets/comics/comic-growth.png" />
 
 <!--
 Slide 23
+
 -->
 
 ---
@@ -1089,7 +1120,7 @@ Slide 23
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="React" src="assets/logos/react.png" /><span>React</span></div>
+<div class="thead"><img src="assets/logos/react.png" /><span>React</span></div>
 <div class="tbody"><div class="tnote">web app</div></div>
 </div>
 <div class="tlabel">Frontend</div>
@@ -1097,7 +1128,7 @@ Slide 23
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="Android" src="assets/logos/android.png" /><span>Android</span></div>
+<div class="thead"><img src="assets/logos/android.png" /><span>Android</span></div>
 <div class="tbody"><div class="tnote">lab floor tablets</div></div>
 </div>
 <div class="tlabel">Control panels</div>
@@ -1112,8 +1143,8 @@ Slide 23
 
 <div>
 <div class="tier full">
-<div class="thead"><img alt="FastAPI" src="assets/logos/fastapi.png" /></div>
-<div class="tbody"><div class="chips stack"><span><img alt="Pydantic" src="assets/logos/pydantic.png" />Pydantic</span><span><img alt="SQLAlchemy" src="assets/logos/sqlalchemy.png" /></span><span><img alt="OpenAPI" src="assets/logos/openapi.png" /></span></div></div>
+<div class="thead"><img src="assets/logos/fastapi.png" /></div>
+<div class="tbody"><div class="chips stack"><span><img src="assets/logos/pydantic.png" />Pydantic</span><span><img src="assets/logos/sqlalchemy.png" /></span><span><img src="assets/logos/openapi.png" /></span></div></div>
 </div>
 <div class="tlabel">Backend</div>
 </div>
@@ -1127,8 +1158,8 @@ Slide 23
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="PostgreSQL" src="assets/logos/postgres.png" /><span>Postgres</span></div>
-<div class="tbody"><img alt="three related tables" src="assets/diagram-tables.svg" /></div>
+<div class="thead"><img src="assets/logos/postgres.png" /><span>Postgres</span></div>
+<div class="tbody"><img src="assets/diagram-tables.svg" /></div>
 </div>
 <div class="tlabel">Database</div>
 </div>
@@ -1162,7 +1193,7 @@ Slide 24
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="React" src="assets/logos/react.png" /><span>React</span></div>
+<div class="thead"><img src="assets/logos/react.png" /><span>React</span></div>
 <div class="tbody"><div class="tnote">web app</div></div>
 </div>
 <div class="tlabel">Frontend</div>
@@ -1170,7 +1201,7 @@ Slide 24
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="Android" src="assets/logos/android.png" /><span>Android</span></div>
+<div class="thead"><img src="assets/logos/android.png" /><span>Android</span></div>
 <div class="tbody"><div class="tnote">lab floor tablets</div></div>
 </div>
 <div class="tlabel">Control panels</div>
@@ -1185,8 +1216,8 @@ Slide 24
 
 <div>
 <div class="tier full">
-<div class="thead"><img alt="FastAPI" src="assets/logos/fastapi.png" /></div>
-<div class="tbody"><div class="chips stack"><span><img alt="Pydantic" src="assets/logos/pydantic.png" />Pydantic</span><span><img alt="SQLAlchemy" src="assets/logos/sqlalchemy.png" /></span><span><img alt="OpenAPI" src="assets/logos/openapi.png" /></span></div></div>
+<div class="thead"><img src="assets/logos/fastapi.png" /></div>
+<div class="tbody"><div class="chips stack"><span><img src="assets/logos/pydantic.png" />Pydantic</span><span><img src="assets/logos/sqlalchemy.png" /></span><span><img src="assets/logos/openapi.png" /></span></div></div>
 </div>
 <div class="tlabel">Backend</div>
 </div>
@@ -1200,8 +1231,8 @@ Slide 24
 
 <div>
 <div class="tier">
-<div class="thead"><img alt="PostgreSQL" src="assets/logos/postgres.png" /><span>Postgres</span></div>
-<div class="tbody"><img alt="three related tables" src="assets/diagram-tables.svg" /></div>
+<div class="thead"><img src="assets/logos/postgres.png" /><span>Postgres</span></div>
+<div class="tbody"><img src="assets/diagram-tables.svg" /></div>
 </div>
 <div class="tlabel">Database</div>
 </div>
@@ -1279,11 +1310,13 @@ message Species {
 
 <!--
 Slide 26
+
+More people more opinions.  And that's when things start getting out of control
 -->
 
 ---
 
-![alt text showing the lead developer at a whiteboard announcing that Species height becomes a range with units instead of a bare number, width:720px](assets/comics/comic-schema-change.png)
+![width:720px](assets/comics/comic-schema-change.png)
 
 ### Schemas change
 
@@ -1300,7 +1333,7 @@ Slide 27
 
 <div class="panels">
 
-<div><img alt="an angry meeting room, everyone talking at once" src="assets/comics/fallout-argue.png" /></div>
+<div><img src="assets/comics/fallout-argue.png" /></div>
 
 <div></div>
 
@@ -1319,9 +1352,9 @@ Slide 28
 
 <div class="panels">
 
-<div><img alt="an angry meeting room, everyone talking at once" src="assets/comics/fallout-argue.png" /></div>
+<div><img src="assets/comics/fallout-argue.png" /></div>
 
-<div><img alt="each developer alone in a cubicle making the same edit" src="assets/comics/fallout-edit.png" /></div>
+<div><img src="assets/comics/fallout-edit.png" /></div>
 
 <div></div>
 
@@ -1338,11 +1371,11 @@ Slide 29
 
 <div class="panels">
 
-<div><img alt="an angry meeting room, everyone talking at once" src="assets/comics/fallout-argue.png" /></div>
+<div><img src="assets/comics/fallout-argue.png" /></div>
 
-<div><img alt="each developer alone in a cubicle making the same edit" src="assets/comics/fallout-edit.png" /></div>
+<div><img src="assets/comics/fallout-edit.png" /></div>
 
-<div><img alt="a laptop showing a 400 Invalid Response error" src="assets/comics/fallout-error.png" /></div>
+<div><img src="assets/comics/fallout-error.png" /></div>
 
 </div>
 
@@ -1357,11 +1390,11 @@ Slide 30
 
 <div class="panels">
 
-<div><img alt="each developer alone in a cubicle making the same edit" src="assets/comics/fallout-edit.png" /></div>
+<div><img src="assets/comics/fallout-edit.png" /></div>
 
-<div><img alt="a laptop showing a 400 Invalid Response error" src="assets/comics/fallout-error.png" /></div>
+<div><img src="assets/comics/fallout-error.png" /></div>
 
-<div><img alt="the team at their desks in despair, nobody owns the model" src="assets/comics/panel-frustrated.png" /></div>
+<div><img src="assets/comics/panel-frustrated.png" /></div>
 
 </div>
 
@@ -1376,11 +1409,11 @@ Slide 31
 
 <div class="panels">
 
-<div><img alt="a laptop showing a 400 Invalid Response error" src="assets/comics/fallout-error.png" /></div>
+<div><img src="assets/comics/fallout-error.png" /></div>
 
-<div><img alt="the team at their desks in despair, nobody owns the model" src="assets/comics/panel-frustrated.png" /></div>
+<div><img src="assets/comics/panel-frustrated.png" /></div>
 
-<div><img alt="the office at rock bottom, late at night, nobody working" src="assets/comics/panel-despair.png" /></div>
+<div><img src="assets/comics/panel-despair.png" /></div>
 
 </div>
 
@@ -1394,9 +1427,9 @@ Slide 32
 
 <div class="panels">
 
-<div><img alt="the office at rock bottom, nobody working" src="assets/comics/panel-despair.png" /></div>
+<div><img src="assets/comics/panel-despair.png" /></div>
 
-<div><img alt="a panel holding nothing but a question mark" src="assets/panel-question.svg" /></div>
+<div><img src="assets/panel-question.svg" /></div>
 
 <div></div>
 
@@ -1404,15 +1437,17 @@ Slide 32
 
 <!--
 Slide 33
+
+And now we out of
 -->
 
 ---
 
 <div class="panels">
 
-<div><img alt="a panel holding nothing but a question mark" src="assets/panel-question.svg" /></div>
+<div><img src="assets/panel-question.svg" /></div>
 
-<div><img alt="Kevin strides in wearing a linkML t-shirt" src="assets/comics/hero-arrive.png" /></div>
+<div><img src="assets/comics/hero-arrive.png" /></div>
 
 <div></div>
 
@@ -1427,11 +1462,11 @@ Slide 34
 
 <div class="panels">
 
-<div><img alt="Kevin strides in wearing a linkML t-shirt" src="assets/comics/hero-arrive.png" /></div>
+<div><img src="assets/comics/hero-arrive.png" /></div>
 
-<div><img alt="one schema file fans out into every generated artifact" src="assets/comics/hero-generate.png" /></div>
+<div><img src="assets/comics/hero-generate.png" /></div>
 
-<div><img alt="one schema.yaml file fanning out to every generated target" src="assets/panel-schema.svg" /></div>
+<div><img src="assets/panel-schema.svg" /></div>
 
 </div>
 
@@ -1444,11 +1479,11 @@ Slide 35
 
 <div class="panels">
 
-<div><img alt="one schema file fans out into every generated artifact" src="assets/comics/hero-generate.png" /></div>
+<div><img src="assets/comics/hero-generate.png" /></div>
 
-<div><img alt="one schema.yaml file fanning out to every generated target" src="assets/panel-schema.svg" /></div>
+<div><img src="assets/panel-schema.svg" /></div>
 
-<div><img alt="the whole team celebrating together" src="assets/comics/hero-happy.png" /></div>
+<div><img src="assets/comics/hero-happy.png" /></div>
 
 </div>
 
@@ -1929,7 +1964,7 @@ slide carries the headline counts.
 
 ### The LinkML community
 
-<img class="community-pic" alt="the LinkML community gathered at a tutorial session" src="assets/community/community.png" />
+<img class="community-pic" src="assets/community/community.png" />
 
 <div class="statrow">
 
@@ -1960,10 +1995,10 @@ Slide 49
 
 | | | <span class="cnt"><span class="ic">▣</span>classes</span><span class="cnt"><span class="ic">◆</span>slots</span> | |
 |---|---|---|---|
-| MIxS | Genomic and environmental metadata | <span class="cnt"><span class="ic">▣</span>347</span><span class="cnt"><span class="ic">◆</span>1,178</span> | <img class="gh" alt="" src="assets/icon-github.svg" />[GenomicsStandardsConsortium/mixs](https://github.com/GenomicsStandardsConsortium/mixs) |
-| BioLink Model | Biomedical knowledge graphs | <span class="cnt"><span class="ic">▣</span>336</span><span class="cnt"><span class="ic">◆</span>583</span> | <img class="gh" alt="" src="assets/icon-github.svg" />[biolink/biolink-model](https://github.com/biolink/biolink-model) |
-| NMDC | National microbiome data | <span class="cnt"><span class="ic">▣</span>89</span><span class="cnt"><span class="ic">◆</span>898</span> | <img class="gh" alt="" src="assets/icon-github.svg" />[microbiomedata/nmdc-schema](https://github.com/microbiomedata/nmdc-schema) |
-| INCLUDE | Down syndrome research hub | <span class="cnt"><span class="ic">▣</span>65</span><span class="cnt"><span class="ic">◆</span>69</span> | <img class="gh" alt="" src="assets/icon-github.svg" />[include-dcc/include-linkml](https://github.com/include-dcc/include-linkml) |
+| MIxS | Genomic and environmental metadata | <span class="cnt"><span class="ic">▣</span>347</span><span class="cnt"><span class="ic">◆</span>1,178</span> | <img class="gh" src="assets/icon-github.svg" />[GenomicsStandardsConsortium/mixs](https://github.com/GenomicsStandardsConsortium/mixs) |
+| BioLink Model | Biomedical knowledge graphs | <span class="cnt"><span class="ic">▣</span>336</span><span class="cnt"><span class="ic">◆</span>583</span> | <img class="gh" src="assets/icon-github.svg" />[biolink/biolink-model](https://github.com/biolink/biolink-model) |
+| NMDC | National microbiome data | <span class="cnt"><span class="ic">▣</span>89</span><span class="cnt"><span class="ic">◆</span>898</span> | <img class="gh" src="assets/icon-github.svg" />[microbiomedata/nmdc-schema](https://github.com/microbiomedata/nmdc-schema) |
+| INCLUDE | Down syndrome research hub | <span class="cnt"><span class="ic">▣</span>65</span><span class="cnt"><span class="ic">◆</span>69</span> | <img class="gh" src="assets/icon-github.svg" />[include-dcc/include-linkml](https://github.com/include-dcc/include-linkml) |
 
 
 </div>
@@ -1980,7 +2015,7 @@ Slide 50
 
 ### Please join
 
-<img class="corner-qr" alt="QR code for the LinkML get-involved page" src="assets/qr-get-involved.svg" />
+<img class="corner-qr" src="assets/qr-get-involved.svg" />
 
 **How to help**
 
@@ -2040,11 +2075,11 @@ Slide 54
 
 <div class="qrow">
 
-<div><img alt="QR code for this deck" src="assets/qr-deck.svg" /><div class="cap">This deck</div></div>
+<div><img src="assets/qr-deck.svg" /><div class="cap">This deck</div></div>
 
-<div><img alt="QR code for the linkml-pokemon demo schema" src="assets/qr-pokemon-repo.svg" /><div class="cap">Demo schema</div></div>
+<div><img src="assets/qr-pokemon-repo.svg" /><div class="cap">Demo schema</div></div>
 
-<div><img alt="QR code for the LinkML get-involved page" src="assets/qr-get-involved.svg" /><div class="cap">Get involved</div></div>
+<div><img src="assets/qr-get-involved.svg" /><div class="cap">Get involved</div></div>
 
 </div>
 
@@ -2060,11 +2095,11 @@ Slide 55
 
 <div class="qrow">
 
-<div><img alt="QR code for this deck" src="assets/qr-deck.svg" /><div class="cap">This deck</div></div>
+<div><img src="assets/qr-deck.svg" /><div class="cap">This deck</div></div>
 
-<div><img alt="QR code for the linkml-pokemon demo schema" src="assets/qr-pokemon-repo.svg" /><div class="cap">Demo schema</div></div>
+<div><img src="assets/qr-pokemon-repo.svg" /><div class="cap">Demo schema</div></div>
 
-<div><img alt="QR code for the LinkML get-involved page" src="assets/qr-get-involved.svg" /><div class="cap">Get involved</div></div>
+<div><img src="assets/qr-get-involved.svg" /><div class="cap">Get involved</div></div>
 
 </div>
 
